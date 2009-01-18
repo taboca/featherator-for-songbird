@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<project name="featherator" default="gen-png" basedir=".">
+	
+	<property file="build.properties" />
+	
+		<taskdef name="rasterize" classname="org.apache.tools.ant.taskdefs.optional.RasterizerTask" >
+
+        <classpath>
+         <pathelement location="./lib/*.jar" />
+          <pathelement location="./lib/batik-parser.jar" />
+          <pathelement location="./lib/batik-awt-util.jar" />
+          <pathelement location="./lib/batik-script.jar" />
+          <pathelement location="./lib/batik-xml.jar" />
+          <pathelement location="./lib/batik-codec.jar" />
+          <pathelement location="./lib/batik-ext.jar" />
+          <pathelement location="./lib/batik-css.jar" />
+          <pathelement location="./lib/batik-anim.jar" />
+          <pathelement location="./lib/batik-svg-dom.jar" />
+          <pathelement location="./lib/batik-svggen.jar" />
+          <pathelement location="./lib/batik-gvt.jar" />
+          <pathelement location="./lib/batik-bridge.jar" />
+          <pathelement location="./lib/batik-dom.jar" />
+          <pathelement location="./lib/batik-util.jar" />
+          <pathelement location="./lib/batik-transcoder.jar" />
+          <pathelement location="./lib/batik-rasterizer.jar" />
+          <pathelement location="./lib/xml-apis-ext.jar" />
+          <pathelement location="./lib/RasterizerTask.jar" />
+        </classpath>
+
+	</taskdef>
+	
+    <target name="gen-png">
+
+      <rasterize result="image/png" destdir="build-png/DIRECTORY_NAME">
+	    <fileset dir="src/svg/DIRECTORY_NAME">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+	</target>
+	
+	<target name="copy-css" >
+        <mkdir dir="output-build-chrome" />
+    	
+		<copy todir="output-build-chrome" 
+			overwrite="yes">
+			<fileset dir="src/input-base-chrome" includes="**/*" />
+		</copy>
+
+	</target>
+	
+	<target name="copy-png" >
+		<!-- copy classes -->
+
+		<copy todir="output-build-chrome"  overwrite="yes">
+			<fileset dir="build-png" includes="**/*" />
+		</copy>
+		
+	</target>
+	
+     	<target name="zipjar">
+		 <zip destfile="build-distrib/feather.jar" basedir="output-build-chrome" />
+ 	</target> 
+	
+</project>

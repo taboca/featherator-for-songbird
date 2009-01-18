@@ -1,0 +1,3 @@
+export JAVA_HOME=/usr/local/jdk...
+/usr/local/apache ant bin
+
