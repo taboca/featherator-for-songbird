@@ -2,3 +2,7 @@ Featherator Project by Taboca
 A SongBird generation system
 --------------
 ;
+
+== References == 
+
+* http://wiki.songbirdnest.com/Developer/Developer_Intro/Feathers
