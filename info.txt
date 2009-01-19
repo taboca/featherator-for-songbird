@@ -6,3 +6,11 @@ A SongBird generation system
 == References == 
 
 * http://wiki.songbirdnest.com/Developer/Developer_Intro/Feathers
+
+== How to Setup SongBird to Load the Output build dir directory ==
+
+* checkout this project - you probably did it already :) 
+* Access your songbird profile directory. In my linux case it is located in ~username/.songbird2/RanDoMN#umB3R/
+* put a file named theme@featherator.taboca.com  your ./ profile extensions directory : 
+* Make it point to your output-build-chrome directory from this project - make case is: 
+* //home/marcio/theme-ff3/featherator/featherator-for-songbird/output-build-chrome
