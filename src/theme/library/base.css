@@ -7,6 +7,31 @@
   
 */
 
+/* Elected */
+
+
+.faceplate-from-color {
+        stop-color:rgb(250,190,240);
+        stop-opacity:1;
+}
+.faceplate-to-color {
+        stop-color:rgb(230,164,222);
+        stop-opacity:1;
+}
+
+/* Used to the main toolbar */
+
+.bg-from-color { 
+	stop-color:rgb(255,240,255);
+	stop-opacity:1
+}
+.bg-to-color { 
+	stop-color:rgb(240,180,230); 
+ 	stop-opacity:1; 
+} 
+
+/* The following under review - this comes from pinkTheme project */
+
 .progress-background {
    fill: rgb(250,190,240);
    stop-opacity: 1;
@@ -78,14 +103,6 @@
    stop-opacity:1; 
 } 
 
-.popup-from-color { 
-	stop-color:rgb(255,240,255);
-	stop-opacity:1
-}
-.popup-to-color { 
-	stop-color:rgb(250,190,240); 
- 	stop-opacity:1; 
-} 
 
 /* Browserr find bar */
 
