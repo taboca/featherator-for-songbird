@@ -32,8 +32,8 @@
 	
     <target name="gen-png">
 
-      <rasterize result="image/png" destdir="build-png/DIRECTORY_NAME">
-	    <fileset dir="src/svg/DIRECTORY_NAME">
+      <rasterize result="image/png" destdir="build-png/chrome/skin/media-control-pane">
+	    <fileset dir="src/theme/elected/chrome/skin/media-control-pane">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>

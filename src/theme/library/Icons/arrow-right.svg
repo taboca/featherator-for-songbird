@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../base.css" type="text/css" ?>
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="80"
+   height="120"
+   viewBox="0 0 80 120"
+   version="1.1"
+   >
+
+<defs>
+   <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="arrow-from-color"  />
+     <stop offset="100%" class="arrow-to-color"  />
+   </linearGradient>
+   <linearGradient id="popupshade2" x1="0%" y1="0%" x2="100%" y2="100%">
+     <stop offset="0%" class="arrow-from-color"  />
+     <stop offset="50%" class="arrow-to-color"  />
+     <stop offset="100%" class="arrow-from-color"  />
+   </linearGradient>
+</defs>
+
+<path d="M 10 10 L 10 110 L 70 60" style="fill:url(#popupshade2)" />
+
+</svg>

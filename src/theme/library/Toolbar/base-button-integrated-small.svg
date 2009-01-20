@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../base.css" type="text/css" ?>
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="82"
+   height="22"
+   viewBox="0 0 82 22"
+   version="1.1"
+   >
+
+<defs>
+   <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="urlbarstart-from-color"  />
+     <stop offset="100%" class="urlbarstart-to-color"  />
+   </linearGradient>
+   <linearGradient id="popupshade2" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="urlbarstart-to-color"  />
+     <stop offset="100%" class="urlbarstart-from-color"  />
+   </linearGradient>
+
+   <mask id="classtop">
+      <rect x="0" y="0" width="82" height="22" style="fill:black"  />
+      <rect x="4" y="4" rx="8" ry="8" width="74" height="14" style="fill:white"  />
+      <rect x="4" y="10" rx="8" ry="8" width="74" height="34" style="fill:black"  />
+   </mask>
+   <linearGradient id="whiteglassshade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"    style="stop-color:white;opacity:.5"  />
+     <stop offset="100%"  style="stop-color:white;opacity:.1"  />
+   </linearGradient>
+
+</defs>
+
+<rect x="0" y="0" rx="10" ry="10" width="82" height="21" style="fill:url(#popupshade2)"  />
+<rect x="2" y="2" rx="10" ry="10" width="78" height="18" style="stroke-width:2px;stroke:url(#popupshade);fill:none"  />
+<rect x="0" y="0" rx="10" ry="10" width="82" height="21" style="fill:url(#whiteglassshade)" mask="url(#classtop)"  />
+
+</svg>

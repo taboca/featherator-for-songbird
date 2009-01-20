@@ -1,0 +1,26 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="78px" height="33px"  viewBox="0 0 78 33" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+<g>
+
+<image x="3" y="0" width="32px" height="32px"
+	         xlink:href="base-button-circle-active.svg">
+</image>
+<image x="5" y="3" width="25px" height="25px"
+	         xlink:href="icone-back.svg">
+</image>
+
+<image x="33" y="1" width="30px" height="30px"
+	         xlink:href="base-button-circle-active.svg">
+</image>
+<image x="38" y="4" width="23px" height="23px"
+	         xlink:href="icone-forward.svg">
+</image>
+<image x="68" y="10" width="10px" height="10px"
+	         xlink:href="base-button-circle-active.svg">
+</image>
+<image x="61" y="3" width="25px" height="25px"
+	         xlink:href="icone-droparrow.svg">
+</image>
+
+</g>
+
+</svg>

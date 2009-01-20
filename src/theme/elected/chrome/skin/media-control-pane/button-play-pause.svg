@@ -1,0 +1,26 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="80px" height="160px"  viewBox="0 0 80 160" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+<g>
+
+<!-- play button --> 
+
+<image x="0" y="0" width="40px" height="40px" xlink:href="../../../../library/Toolbar/base-button-glassy.svg"> </image>
+<image x="0" y="0" width="40px" height="40px" xlink:href="../../../../library/Toolbar/icone-forward.svg"> </image>
+
+<image x="0" y="40" width="40px" height="40px" xlink:href="../../../../library/Toolbar/base-button-glassy.svg"> </image>
+<image x="0" y="40" width="40px" height="40px" xlink:href="../../../../library/Toolbar/icone-forward.svg"> </image>
+
+<image x="0" y="80" width="40px" height="40px" xlink:href="../../../../library/Toolbar/base-button-glassy.svg"> </image>
+<image x="0" y="80" width="40px" height="40px" xlink:href="../../../../library/Toolbar/icone-forward.svg"> </image>
+
+<g opacity=".5">
+
+<image x="0" y="120" width="40px" height="40px" xlink:href="../../../../library/Toolbar/base-button-activated.svg"> </image>
+<image x="0" y="120" width="40px" height="40px" xlink:href="../../../../library/Toolbar/icone-forward.svg"> </image>
+
+</g>
+
+
+</g>
+
+</svg>

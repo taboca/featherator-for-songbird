@@ -3,7 +3,6 @@
      xmlns:songbird="http://www.songbirdnest.com/2007/addon-metadata-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>theme@featherator.taboca.com</em:id>
-    <em:id>{87476439-923c-be4f-8dbd-8227f56aa35d}</em:id>
     <em:type>2</em:type>
     <em:name>PinkBird</em:name>
     <em:version>1.0.0.0</em:version>
