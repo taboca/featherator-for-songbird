@@ -10,6 +10,15 @@
 /* Elected */
 
 
+.button-from-color {
+	stop-color:rgb(255,240,255);
+        stop-opacity:1;
+}
+.button-to-color {
+        stop-color:rgb(230,164,222);
+        stop-opacity:1;
+}
+
 .faceplate-from-color {
         stop-color:rgb(250,190,240);
         stop-opacity:1;
