@@ -1,0 +1,21 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="30px" height="120px"  viewBox="0 0 30 120" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+<g>
+
+<!-- play button --> 
+
+<image x="0" y="0" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-circle.svg"> </image>
+<image x="0" y="0" width="30px" height="30px" xlink:href="../../../../library/Media/icon-previous.svg"> </image>
+
+<image x="0" y="30" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-circle.svg"> </image>
+<image x="0" y="30" width="30px" height="30px" xlink:href="../../../../library/Media/icon-previous.svg"> </image>
+
+<image x="0" y="60" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-circle-active.svg"> </image>
+<image x="0" y="60" width="30px" height="30px" xlink:href="../../../../library/Media/icon-previous.svg"> </image>
+
+<image x="0" y="90" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-circle.svg"> </image>
+<image x="0" y="90" width="30px" height="30px" xlink:href="../../../../library/Media/icon-previous.svg"> </image>
+
+</g>
+
+</svg>
