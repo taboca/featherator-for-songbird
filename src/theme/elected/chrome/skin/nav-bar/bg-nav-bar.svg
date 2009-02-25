@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../../../../library/base.css" type="text/css" ?>
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="10"
+   height="28"
+   viewBox="0 0 10 28"
+   version="1.1"
+   >
+ 
+
+<defs>
+   <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="bg-to-color"  />
+     <stop offset="100%" class="bg-from-color"  />
+   </linearGradient>
+
+</defs>
+
+<rect x="0" y="0" width="10" height="28"  style="fill:url(#popupshade)" />
+
+</svg>

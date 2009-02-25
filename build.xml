@@ -32,8 +32,26 @@
 	
     <target name="gen-png">
 
+      <rasterize result="image/png" destdir="build-png/chrome/skin/window">
+	    <fileset dir="src/theme/elected/chrome/skin/window">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
       <rasterize result="image/png" destdir="build-png/chrome/skin/media-control-pane">
 	    <fileset dir="src/theme/elected/chrome/skin/media-control-pane">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+      <rasterize result="image/png" destdir="build-png/chrome/skin/nav-bar">
+	    <fileset dir="src/theme/elected/chrome/skin/nav-bar">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+      <rasterize result="image/png" destdir="build-png/chrome/skin/base-elements">
+	    <fileset dir="src/theme/elected/chrome/skin/base-elements">
 	        <include name="*.svg" />
 	    </fileset>
       </rasterize>
