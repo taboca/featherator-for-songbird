@@ -1,0 +1,32 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="48px" height="96px"  viewBox="0 0 48 96" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+<g>
+
+
+<!-- no repeat --> 
+
+<image x="0" y="0" width="24px" height="24px" xlink:href="../../../../library/Media/base-button-rect.svg"> </image>
+<image x="0" y="0" width="24px" height="24px" xlink:href="../../../../library/Media/icon-doubleline.svg"> </image>
+
+<image x="0" y="24" width="24px" height="24px" xlink:href="../../../../library/Media/base-button-rect.svg"> </image>
+<image x="0" y="24" width="24px" height="24px" xlink:href="../../../../library/Media/icon-doubleline.svg"> </image>
+
+<image x="0" y="48" width="24px" height="24px" xlink:href="../../../../library/Media/base-button-rect-active.svg"> </image>
+<image x="0" y="48" width="24px" height="24px" xlink:href="../../../../library/Media/icon-doubleline.svg"> </image>
+
+
+<!-- repeat -->
+
+<image x="24" y="0" width="24px" height="24px" xlink:href="../../../../library/Media/base-button-rect.svg"> </image>
+<image x="24" y="0" width="24px" height="24px" xlink:href="../../../../library/Media/icon-shuffle.svg"> </image>
+
+<image x="24" y="24" width="24px" height="24px" xlink:href="../../../../library/Media/base-button-rect.svg"> </image>
+<image x="24" y="24" width="24px" height="24px" xlink:href="../../../../library/Media/icon-shuffle.svg"> </image>
+
+<image x="24" y="48" width="24px" height="24px" xlink:href="../../../../library/Media/base-button-rect-active.svg"> </image>
+<image x="24" y="48" width="24px" height="24px" xlink:href="../../../../library/Media/icon-shuffle.svg"> </image>
+
+
+</g>
+
+</svg>
