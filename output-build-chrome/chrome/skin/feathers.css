@@ -1011,3 +1011,9 @@ html|*.error-text,
 }
 
 
+#titlebar_box {
+  border-bottom:0px;
+}
+
+
+

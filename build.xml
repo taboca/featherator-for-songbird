@@ -32,6 +32,12 @@
 	
     <target name="gen-png">
 
+      <rasterize result="image/png" destdir="build-png/chrome/skin/browser-tab-bar">
+	    <fileset dir="src/theme/elected/chrome/skin/browser-tab-bar">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
       <rasterize result="image/png" destdir="build-png/chrome/skin/window">
 	    <fileset dir="src/theme/elected/chrome/skin/window">
 	        <include name="*.svg" />

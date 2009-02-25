@@ -5,7 +5,18 @@ echo "255,255,255 - tabpanels "
 echo "220,220,220 - tabs "
 
 
+echo "Cat files ... "
+
+
 echo "=============== general all ================"
+
+cat  ./output-build-chrome/chrome/skin/feathers.css ./patches/feathers.css > ./temp/temp.css
+
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
+echo "=============== general all ================"
+
+
 
 sed -e "s/rgb(255,255,255)/rgb(255,210,250)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
