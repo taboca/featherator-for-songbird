@@ -1,0 +1,14 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="10px" height="80px"  viewBox="0 0 10 80" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+<g>
+
+<!-- no repeat --> 
+
+<image x="0" y="0"  width="10px" height="20px" xlink:href="../../../../library/Buttons/button-normal.svg"> </image>
+<image x="0" y="20"  width="10px" height="20px" xlink:href="../../../../library/Buttons/button-active.svg"> </image>
+<image x="0" y="40"  width="10px" height="20px" xlink:href="../../../../library/Buttons/button-pressed.svg"> </image>
+<image x="0" y="60"  width="10px" height="20px" xlink:href="../../../../library/Buttons/button-inactive.svg"> </image>
+
+</g>
+
+</svg>

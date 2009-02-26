@@ -250,7 +250,7 @@ sb-rating,
 .menulist-editable-box {
   background-color:rgb(255,210,250);
 
-  border-top:1px solid rgb(120,120,120);
+  border-top:1px solid rgb(255,255,255);
   border-right:1px solid rgb(195,135,185);
   border-bottom:1px solid rgb(200,200,200);
   border-left:1px solid rgb(195,135,185);
@@ -300,7 +300,7 @@ button,
 toolbarbutton,
 menulist {
   -moz-border-radius:3px;
-  border:1px solid rgb(120,120,120);
+  border:1px solid rgb(255,255,255);
 }
 
 button:focus,
@@ -655,14 +655,14 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 
 #nav-bar toolbarbutton {  
   background-color:rgb(255,210,250);
-  border:1px solid rgb(110,40,90);
-  -moz-border-radius:2px;
+  border:1px solid rgb(150,60,130);
+  -moz-border-radius:3px;
 }
 #nav-bar toolbarbutton button {
   -moz-border-radius:2px;
 }
 #nav-bar toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-button {
-  border-right:1px solid rgb(110,40,90);
+  border-right:1px solid rgb(150,60,130);
 }
 
 
@@ -674,10 +674,10 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 #searchbar .search-go-button {
   background-color:rgb(230,230,230);
 
-  border-top:1px solid rgb(110,40,90);
-  border-right:1px solid rgb(110,40,90);
+  border-top:1px solid rgb(150,60,130);
+  border-right:1px solid rgb(150,60,130);
   border-bottom:1px solid rgb(195,135,185);
-  border-left:1px solid rgb(110,40,90);
+  border-left:1px solid rgb(150,60,130);
 }
 .searchbar-engine-button {  
   background-color:rgb(180,180,180);
@@ -685,7 +685,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
   -moz-border-radius:0 !important;
   -moz-border-radius-topleft:2px !important;
   -moz-border-radius-bottomleft:2px !important;
-  border:1px solid rgb(110,40,90);
+  border:1px solid rgb(150,60,130);
 }
 /* highlight the menu item when it's available */
 .addengine-item {
@@ -705,11 +705,11 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
   -moz-border-radius:8px;
   background-color:rgb(245,185,235);
   border:1px solid rgb(200,200,200);
-  color:rgb(120,120,120);
+  color:rgb(255,255,255);
 }
 
 .drop-message {
-  color:rgb(120,120,120);
+  color:rgb(255,255,255);
 }
 
 /******************************************************************************

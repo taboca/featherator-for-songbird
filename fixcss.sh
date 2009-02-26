@@ -46,7 +46,13 @@ sed -e "s/rgb(131,131,131)/rgb(190,130,180)/g" ./output-build-chrome/chrome/skin
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
 
+echo "buttons..." 
+
+sed -e "s/rgb(120,120,120)/rgb(255,255,255)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
 sed -e "s/rgb(80,80,80)/rgb(110,40,90)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/rgb(80,80,80)/rgb(150,60,130)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
 

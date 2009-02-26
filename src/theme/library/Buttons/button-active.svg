@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../base.css" type="text/css" ?>
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="10"
+   height="20"
+   viewBox="0 0 10 20"
+   version="1.1"
+   >
+
+<defs>
+   <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="button-dark-from-color"  />
+     <stop offset="100%" class="button-dark-to-color"  />
+   </linearGradient>
+   <linearGradient id="popupshade2" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="button-to-color"  />
+     <stop offset="100%" class="button-from-color"  />
+   </linearGradient>
+
+   <mask id="classtop">
+      <rect x="0" y="0" width="10" height="20" style="fill:black"  />
+      <rect x="0" y="3" width="10" height="16" style="fill:white"  />
+   </mask>
+   <linearGradient id="white" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"    style="stop-color:white;stop-opacity:.1"  />
+     <stop offset="50%"    style="stop-color:white;stop-opacity:.6"  />
+     <stop offset="100%"  style="stop-color:white;stop-opacity:.1"  />
+   </linearGradient>
+
+
+</defs>
+
+<rect x="0" y="0"  width="10" height="20" style="fill:url(#popupshade)"  />
+<rect x="0" y="0"  width="10" height="20" style="fill:url(#white)"  />
+
+</svg>
+
+

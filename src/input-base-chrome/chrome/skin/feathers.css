@@ -656,7 +656,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 #nav-bar toolbarbutton {  
   background-color:rgb(255,255,255);
   border:1px solid rgb(80,80,80);
-  -moz-border-radius:2px;
+  -moz-border-radius:3px;
 }
 #nav-bar toolbarbutton button {
   -moz-border-radius:2px;
