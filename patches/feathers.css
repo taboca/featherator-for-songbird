@@ -11,3 +11,30 @@
 
 
 
+/* Textboxes */
+
+textbox[edited="true"],
+sb-rating[edited],
+searchbar:not([empty="true"])[livesearchmode="true"] .search-go-button,
+searchbar:not([empty="true"])[livesearchmode="true"] .searchbar-textbox {
+  background-color:rgb(255,215,255) !important;
+}
+
+/*
+  Focused state
+*/
+textbox[focused="true"]:not(.plain),
+searchbar[focused="true"] .search-go-button,
+searchbar[focused="true"] .searchbar-textbox {
+  background-color: rgb(255,235,255) !important;
+}
+
+/* location bar overlay */
+
+.locationbar-textbox, .searchbar-textbox, #searchbar .search-go-button {
+  border:0px solid; 
+  border:1px solid white; 
+  border-color:  rgb(255,255,255) ; 
+}
+
+

@@ -21,7 +21,6 @@
    </linearGradient>
 </defs>
 
-<rect x="0" y="0" width="300" height="30"  style="fill:url(#popupshade2)"  />
-<rect x="0" y="0" width="300" height="30"  style="stroke-width:1px;stroke:url(#popupshade);fill:none"  />
+<rect x="0" y="0" width="300" height="30"  style="fill:none"  />
 
 </svg>

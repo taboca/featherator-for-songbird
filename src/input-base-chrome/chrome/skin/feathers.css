@@ -264,6 +264,7 @@ sb-rating[edited],
 searchbar:not([empty="true"])[livesearchmode="true"] .search-go-button,
 searchbar:not([empty="true"])[livesearchmode="true"] .searchbar-textbox {
   background-color:rgb(255,255,215) !important;
+  background-color:rgb(255,215,255) !important;
 }
 
 /*
@@ -273,6 +274,7 @@ textbox[focused="true"]:not(.plain),
 searchbar[focused="true"] .search-go-button,
 searchbar[focused="true"] .searchbar-textbox {
   background-color: rgb(255,255,235) !important;
+  background-color: rgb(255,235,255) !important;
 }
 
 /*
@@ -674,7 +676,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 #searchbar .search-go-button {
   background-color:rgb(230,230,230);
 
-  border-top:1px solid rgb(80,80,80);
+  border-top:3px solid rgb(80,80,80);
   border-right:1px solid rgb(80,80,80);
   border-bottom:1px solid rgb(140,140,140);
   border-left:1px solid rgb(80,80,80);
