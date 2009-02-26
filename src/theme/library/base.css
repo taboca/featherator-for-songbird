@@ -39,10 +39,12 @@
 
 .button-dark-from-color {
         stop-color:rgb(230,164,222);
+	stop-color:rgb(255,240,255);
         stop-opacity:1;
 }
 .button-dark-to-color {
         stop-color:rgb(200,130,190);
+        stop-color:rgb(230,164,222);
         stop-opacity:1;
 }
 

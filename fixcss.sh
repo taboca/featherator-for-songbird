@@ -53,6 +53,7 @@ cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
 sed -e "s/rgb(80,80,80)/rgb(110,40,90)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 sed -e "s/rgb(80,80,80)/rgb(150,60,130)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/rgb(80,80,80)/rgb(240,190,230)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
 

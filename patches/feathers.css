@@ -2,5 +2,12 @@
   border-bottom:0px;
 }
 
+#nav-bar toolbarbutton {
+  border:1px solid white;
+  -moz-border-radius:4px;
+  border-color: rgb(250,190,240) rgb(255,210,250)  rgb(255,255,255); 
+}
+
+
 
 
