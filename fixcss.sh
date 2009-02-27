@@ -11,8 +11,11 @@ echo "Cat files ... "
 echo "=============== general all ================"
 
 cat  ./output-build-chrome/chrome/skin/feathers.css ./patches/feathers.css > ./temp/temp.css
-
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
+
+cat  ./output-build-chrome/chrome/skin/colors.css ./patches/colors.css > ./temp/temp.css
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/colors.css
 
 echo "=============== general all ================"
 

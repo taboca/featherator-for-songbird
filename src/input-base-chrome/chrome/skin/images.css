@@ -172,7 +172,7 @@ notification[type="critical"],
   background-position:center bottom;
 }
 .tabbrowser-tab {
-  background-image: url('chrome://songbird/skin/browser-tab-bar/bg-tab-delimiter.png') !important;
+  background-image: url('chrome://songbird/skin/browser-tab-bar/bg-tab-delimiter.png')  !important;
   background-repeat:no-repeat;
   background-position:right 0px !important;
 }

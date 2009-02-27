@@ -1231,3 +1231,17 @@ findbar {
 .searchbar-engine-button[open="true"] > .searchbar-engine-button-stack > .searchbar-engine-image-container > image {
   opacity:0.5;
 }
+
+.tabbrowser-tab {
+  padding: 0px 7px 0px 0px !important;
+
+}
+
+.tabbrowser-tab > .tab-image-middle,
+.tabbrowser-tab > .tab-image-left,
+.tabbrowser-tab > .tab-image-right,
+.tabbrowser-tab > .tab-close-button {
+  min-height: 26px !important;
+}
+
+

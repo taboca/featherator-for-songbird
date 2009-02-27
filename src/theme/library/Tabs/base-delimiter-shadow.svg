@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../base.css" type="text/css" ?>
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="10"
+   height="30"
+   viewBox="0 0 10 30"
+   version="1.1"
+   >
+
+<defs>
+
+   <linearGradient id="shadowright" x1="0%" y1="0%" x2="100%" y2="0%">
+     <stop offset="0%"   class="shadow-shadow"  />
+     <stop offset="100%" class="shadow-transparent"  />
+   </linearGradient>
+
+   <mask id="classtop">
+      <rect x="0" y="0" width="300" height="24" style="fill:url(#whiteblack)"  />
+   </mask>
+
+   <linearGradient id="whiteglassshade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"    style="stop-color:white;opacity:1"  />
+     <stop offset="100%"  style="stop-color:white;opacity:1"  />
+   </linearGradient>
+
+</defs>
+
+<rect x="0" y="0" width="10" height="30"  style="fill:url(#shadowright)"  />
+
+</svg>

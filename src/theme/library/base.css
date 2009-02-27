@@ -9,6 +9,16 @@
 
 /* Elected */
 
+
+.shadow-shadow {
+        stop-opacity:.4;
+        stop-color:rgb(0,0,0);
+}
+.shadow-transparent {
+        stop-color:rgb(255,255,255);
+        stop-opacity:0;
+}
+
 .bg-shadow {
         stop-opacity:.4;
         stop-color:rgb(0,0,0);
