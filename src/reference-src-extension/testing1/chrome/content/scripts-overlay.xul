@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overlay id="testing1-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="main.js"/>
+
+  <stringbundleset id="stringbundleset"> 
+     <stringbundle id="testing1-strings" src="chrome://testing1/locale/overlay.properties"/>
+  </stringbundleset>  
+
+</overlay>

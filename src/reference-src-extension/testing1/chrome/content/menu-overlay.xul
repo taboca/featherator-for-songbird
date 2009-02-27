@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://testing1/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://testing1/locale/overlay.dtd">
+<overlay id="testing1-menu-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <!-- Target the tools menu -->
+  <menupopup id="menu_ToolsPopup"> 
+
+    <!-- Add a menu item -->
+    <menuitem id="testing1-helloworld-menuitem"
+            label="&testing1.helloworld.label;" 
+            accesskey="&testing1.helloworld.accesskey;" 
+            insertafter="devToolsSeparator"
+            command="testing1-helloworld-cmd" />   
+     
+  </menupopup>
+
+</overlay>
