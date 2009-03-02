@@ -1,0 +1,13 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="10px" height="57px"  viewBox="0 0 10 57" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+<g>
+
+<!-- no repeat --> 
+
+<image x="0" y="0" width="10px" height="19px" xlink:href="../../../../library/Headers/header-normal.svg"> </image>
+<image x="0" y="19" width="10px" height="19px" xlink:href="../../../../library/Headers/header-active.svg"> </image>
+<image x="0" y="38" width="10px" height="19px" xlink:href="../../../../library/Headers/header-pressed.svg"> </image>
+
+</g>
+
+</svg>

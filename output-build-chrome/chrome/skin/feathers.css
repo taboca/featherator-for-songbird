@@ -126,6 +126,9 @@ popup {
   background-color:rgb(255,210,250);
 }
 
+
+
+
 tree,
 groupbox,
 radiogroup,
@@ -162,7 +165,7 @@ treecol {
 }
 listheader > label,
 treecol > label {
-  color: rgb(101,101,101);
+  color: rgb(170,120,160);
 }
 
 treecol[insertafter="true"],
@@ -252,7 +255,7 @@ sb-rating,
 
   border-top:1px solid rgb(255,255,255);
   border-right:1px solid rgb(195,135,185);
-  border-bottom:1px solid rgb(200,200,200);
+  border-bottom:1px solid rgb(255,240,250);
   border-left:1px solid rgb(195,135,185);
 }
 
@@ -361,7 +364,7 @@ tabs[orient="horizontal"] tab {
 }
 tabs[orient="horizontal"] tab[selected="true"] {
   border:1px solid rgb(190,130,180);
-  border-bottom:1px solid rgb(200,200,200);
+  border-bottom:1px solid rgb(255,240,250);
 }
 
 /**
@@ -377,7 +380,7 @@ tabs[orient="horizontal"].tabs-bottom tab {
 }
 tabs[orient="horizontal"].tabs-bottom tab[selected="true"] {
   border:1px solid rgb(190,130,180);
-  border-top:1px solid rgb(200,200,200);
+  border-top:1px solid rgb(255,240,250);
 }
 
 /**
@@ -393,7 +396,7 @@ tabs[orient="vertical"] tab {
 }
 tabs[orient="vertical"] tab[selected="true"] {
   border:1px solid rgb(190,130,180);
-  border-left:1px solid rgb(200,200,200);
+  border-left:1px solid rgb(255,240,250);
 }
 
 /**
@@ -409,7 +412,7 @@ tabs[orient="vertical"].tabs-left tab {
 }
 tabs[orient="vertical"].tabs-left tab[selected="true"] {
   border:1px solid rgb(190,130,180);
-  border-right:1px solid rgb(200,200,200);
+  border-right:1px solid rgb(255,240,250);
 }
 
 
@@ -473,7 +476,7 @@ sb-displaypane-button > button {
 listitem[selected="true"],
 richlistitem[selected="true"],
 treechildren::-moz-tree-row( selected, even ) {
-  background-color: rgb(225,225,225);
+  background-color: rgb(245,185,235);
 }
 /* alternating rows for trees */
 treechildren::-moz-tree-row( selected, odd ) {
@@ -489,12 +492,12 @@ menu[_moz-menuactive="true"],
 menuitem[_moz-menuactive="true"],
 treechildren.autocomplete-treebody::-moz-tree-row( selected even ),
 treechildren::-moz-tree-row( selected focus even ) {
-  background-color: rgb(169,212,255);
+  background-color: rgb(220,120,190);
 }
 /* alternating rows for trees */
 treechildren.autocomplete-treebody::-moz-tree-row( selected odd ),
 treechildren::-moz-tree-row( selected focus odd ) {
-  background-color: rgb(164,207,250);
+  background-color: rgb(200,100,170);
 }
 
 /**
@@ -547,7 +550,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 }
 /* used for Linux and Windows only - this is the file menu displayed in the title bar*/
 #main-menubar > menu[_moz-menuactive="true"][open="true"] {
-  background-color:rgb(180,180,180);
+  background-color:rgb(255,255,255);
 }
 
 
@@ -565,7 +568,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 .servicepane-tree > treechildren::-moz-tree-cell-text( servicesource-bookmarks ),
 .servicepane-tree > treechildren::-moz-tree-cell-text( servicesource-playlists ),
 .servicepane-tree > treechildren::-moz-tree-cell-text( folder ) {
-  color:rgb(101,101,101) !important;
+  color:rgb(170,120,160) !important;
   font-weight:normal !important;
 }
 
@@ -595,7 +598,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 
 /* this is th style used when items are dragged over applicable rows */
 .servicepane-tree > treechildren::-moz-tree-row( dropOn ) {
-  background-color:rgb(200,200,200);
+  background-color:rgb(255,240,250);
   border:2px solid rgb(190,130,180); !important;
   -moz-border-radius:6px;
 }
@@ -682,7 +685,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
   border-left:1px solid rgb(240,190,230);
 }
 .searchbar-engine-button {  
-  background-color:rgb(180,180,180);
+  background-color:rgb(255,255,255);
     
   -moz-border-radius:0 !important;
   -moz-border-radius-topleft:2px !important;
@@ -705,8 +708,8 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 
 .empty-message {
   -moz-border-radius:8px;
-  background-color:rgb(245,185,235);
-  border:1px solid rgb(200,200,200);
+  background-color:rgb(235,175,225);
+  border:1px solid rgb(255,240,250);
   color:rgb(255,255,255);
 }
 
@@ -777,7 +780,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 }
 .device-capacity-free,
 .device-capacity-legend-color-box[type="free"] {
-  background-color: rgb(245,185,235);
+  background-color: rgb(235,175,225);
 }
 /* the device capacity bar has 9 notches (10 sections)
    note: rgba(0~255, 0~255, 0~255, 0.0~1.0) */
@@ -971,7 +974,7 @@ scrollbar > slider > thumb {
 }
 /* make the radio button look like a tab */
 #viewGroup > radio {
-  background-color:rgb(200,200,200) !important;
+  background-color:rgb(255,240,250) !important;
   border:1px solid rgb(190,130,180); !important;
   -moz-border-radius-topleft:3px;
   -moz-border-radius-topright:3px;
@@ -979,7 +982,7 @@ scrollbar > slider > thumb {
 #viewGroup > radio[selected="true"] {
   background-color:rgb(255,210,250) !important;
   border:1px solid rgb(190,130,180) !important;
-  border-bottom:1px solid rgb(200,200,200) !important;
+  border-bottom:1px solid rgb(255,240,250) !important;
 }
 
 #paneAddons {
@@ -1052,4 +1055,8 @@ searchbar[focused="true"] .searchbar-textbox {
   border-color:  rgb(255,210,250) ; 
 }
 
+
+menupopup, menu, menuitem { 
+	background-color:transparent;
+} 
 

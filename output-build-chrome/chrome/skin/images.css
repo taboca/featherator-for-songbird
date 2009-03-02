@@ -735,3 +735,10 @@ scrollcorner {
 richlistitem[loading="true"] .updateBadge {
   list-style-image: url("chrome://songbird/skin/base-elements/icon-loading.png");
 }
+menupopup {
+  background-image:url('chrome://songbird/skin/new-elements/bg-shade-vertical.png');
+  background-repeat:repeat;
+  background-position: left top;
+  border:1px solid rgb(255,255,255) !important; 
+}
+

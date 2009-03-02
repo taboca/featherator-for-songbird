@@ -62,6 +62,18 @@
 	    </fileset>
       </rasterize>
 
+      <rasterize result="image/png" destdir="build-png/chrome/skin/display-pane">
+	    <fileset dir="src/theme/elected/chrome/skin/display-pane">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
+      <rasterize result="image/png" destdir="build-png/chrome/skin/new-elements">
+	    <fileset dir="src/theme/elected/chrome/skin/new-elements">
+	        <include name="*.svg" />
+	    </fileset>
+      </rasterize>
+
 	</target>
 	
 	<target name="copy-css" >

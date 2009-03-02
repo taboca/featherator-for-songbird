@@ -38,3 +38,7 @@ searchbar[focused="true"] .searchbar-textbox {
 }
 
 
+menupopup, menu, menuitem { 
+	background-color:transparent;
+} 
+

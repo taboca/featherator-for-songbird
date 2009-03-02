@@ -9,6 +9,30 @@
 
 /* Elected */
 
+.color-normal {
+        stop-opacity:1;
+        stop-color:rgb(250,190,240);
+}
+.color-normal-less {
+        stop-color:rgb(220,140,190);
+        stop-opacity:1;
+}
+.color-normal-less-less {
+        stop-color:rgb(200,130,170);
+        stop-opacity:1;
+}
+.color-normal-more {
+        stop-color:rgb(255,220,250);
+        stop-opacity:1;
+}
+.color-normal-more-more {
+        stop-color:rgb(255,255,255);
+        stop-opacity:1;
+}
+
+
+
+
 
 .shadow-shadow {
         stop-opacity:.4;

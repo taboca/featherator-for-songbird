@@ -1,3 +1,11 @@
+NOTEs
+---
+
+* The patches/feathers has a border 1px solid white for popup. This is wrong and does not scale to other colors
+
+
+
+
 Featherator Project by Taboca
 A SongBird generation system
 --------------
