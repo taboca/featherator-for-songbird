@@ -4,8 +4,8 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>theme@featherator.taboca.com</em:id>
     <em:type>2</em:type>
-    <em:name>PinkBird</em:name>
-    <em:version>1.0.0.0</em:version>
+    <em:name>PinkFeathers</em:name>
+    <em:version>0.0.0.4</em:version>
     <em:creator>Marcio Galli</em:creator>
     <em:description>Pink Feathers for Songbird</em:description>
     <em:targetApplication>
