@@ -1069,15 +1069,15 @@ menupopup, menu, menuitem {
   Appears when dragging media items - it's a combination of an image and a badge with a count
 ******************************************************************************/
 .faceplate-text {
-  color: rgb(170,100,190);
+  color: rgb(20,0,30);
 }
 #sb-player-artist-label-label,
 #sb-player-album-label-label {
-  color: rgb(190,110,210);
+  color: rgb(170,100,190);
 }
 #sb-player-timeelapsed-label > label,
 #sb-player-totaltime-label > label {
-  color: rgb(190,110,210);
+  color: rgb(170,100,190);
 }
 
 

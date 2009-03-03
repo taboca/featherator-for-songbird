@@ -33,6 +33,9 @@ cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 sed -e "s/_odd_minusfour/rgb(170,100,190)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
+sed -e "s/_odd_dark/rgb(20,0,30)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
 
 
 

@@ -51,15 +51,15 @@ menupopup, menu, menuitem {
   Appears when dragging media items - it's a combination of an image and a badge with a count
 ******************************************************************************/
 .faceplate-text {
-  color: _odd_minusfour;
+  color: _odd_dark;
 }
 #sb-player-artist-label-label,
 #sb-player-album-label-label {
-  color: _odd_minustwo;
+  color: _odd_minusfour;
 }
 #sb-player-timeelapsed-label > label,
 #sb-player-totaltime-label > label {
-  color: _odd_minustwo;
+  color: _odd_minusfour;
 }
 
 
