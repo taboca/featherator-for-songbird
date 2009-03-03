@@ -1,2 +1,2 @@
-./output-build-chrome
-/build-png
+./output-build-chrome/*
+./build-png/*
