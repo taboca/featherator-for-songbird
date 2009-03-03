@@ -12,3 +12,13 @@
 }
 
 
+#faceplate > .hook > .left,
+#faceplate > .hook > .middle,
+#faceplate > .hook > .right,
+#faceplate_inactive > .hook > .left,
+#faceplate_inactive > .hook > .middle,
+#faceplate_inactive > .hook > .right {
+  min-width:15px;
+}
+
+
