@@ -1,0 +1,26 @@
+<svg contentScriptType="text/ecmascript" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" width="80px" height="80px"  viewBox="0 0 80 80" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+
+<g>
+
+<image x="0" y="0" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-circle.svg"> </image>
+<image x="0" y="0" width="40px" height="40px" xlink:href="../../../../library/Media/icon-stop.svg"> </image>
+
+<g opacity=".8">
+<image x="0" y="40" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-circle.svg" > </image>
+<image x="0" y="40" width="40px" height="40px" xlink:href="../../../../library/Media/icon-stop.svg"> </image>
+
+</g>
+
+<image x="0" y="80" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-circle-active.svg"> </image>
+<image x="0" y="80" width="40px" height="40px" xlink:href="../../../../library/Media/icon-stop.svg"> </image>
+
+<g opacity=".5">
+
+<image x="0" y="120" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-circle.svg"> </image>
+<image x="0" y="120" width="40px" height="40px" xlink:href="../../../../library/Media/icon-stop.svg"> </image>
+
+</g>
+
+
+
+</svg>
