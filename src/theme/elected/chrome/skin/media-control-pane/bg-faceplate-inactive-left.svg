@@ -9,7 +9,7 @@
    >
  
 <image x="0" y="0" width="100px" height="44px"
-                 xlink:href="../../../../library/Faceplate-3d/faceplate-default.svg">
+                 xlink:href="../../../../library/Faceplate-3d/faceplate-default.svg" opacity=".6">
 </image>
 
 
