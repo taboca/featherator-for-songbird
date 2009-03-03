@@ -1060,3 +1060,25 @@ menupopup, menu, menuitem {
 	background-color:transparent;
 } 
 
+
+
+
+/******************************************************************************
+> FACEPLATE
+
+  Appears when dragging media items - it's a combination of an image and a badge with a count
+******************************************************************************/
+.faceplate-text {
+  color: rgb(210,120,230)-lll;
+}
+#sb-player-artist-label-label,
+#sb-player-album-label-label {
+  color: rgb(210,120,230)-l;
+}
+#sb-player-timeelapsed-label > label,
+#sb-player-totaltime-label > label {
+  color: rgb(210,120,230)-l;
+}
+
+
+

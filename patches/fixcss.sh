@@ -5,6 +5,10 @@ echo "255,255,255 - tabpanels "
 echo "220,220,220 - tabs "
 
 
+echo "-featherator-odd-normal"
+echo "-featherator-odd-normal-less"
+echo "-featherator-odd-normal-less-less"
+
 echo "Cat files ... "
 
 
@@ -20,9 +24,30 @@ cp ./temp/temp.css ./output-build-chrome/chrome/skin/colors.css
 cat  ./output-build-chrome/chrome/skin/images.css ./patches/images.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/images.css
 
-echo "=============== general all ================"
 
 
+echo " Color values "
+
+sed -e "s/-featherator-odd/rgb(210,120,230)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
+sed -e "s/-featherator-odd-l/rgb(200,115,220)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
+sed -e "s/-featherator-odd-ll/rgb(190,110,210)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
+sed -e "s/-featherator-odd-lll/rgb(180,105,200)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
+sed -e "s/-featherator-odd-llll/rgb(170,100,190)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
+
+
+
+
+
+echo "Old approach "
 
 sed -e "s/rgb(255,255,255)/rgb(255,210,250)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
