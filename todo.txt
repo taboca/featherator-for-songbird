@@ -1,0 +1,10 @@
+Release Notes: 
+---
+
+* 0.4 release
+
+NOTEs
+---
+
+* The patches/feathers has a border 1px solid white for popup. This is wrong and does not scale to other colors
+
