@@ -9,6 +9,12 @@
 
 /* Elected */
 
+
+.color-odd-normal { 
+	fill:rgb(210,120,230);
+} 
+
+
 .color-normal {
         stop-opacity:1;
         stop-color:rgb(250,190,240);

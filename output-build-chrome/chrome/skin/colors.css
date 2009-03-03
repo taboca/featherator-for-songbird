@@ -597,7 +597,7 @@ treechildren#trDOMTreeBody::-moz-tree-row( selected ) {
 #faceplate_inactive > .hook > .left,
 #faceplate_inactive > .hook > .middle,
 #faceplate_inactive > .hook > .right {
-  min-width:8px;
+  min-width:10px;
   min-height:44px;
   max-height:44px;
 }
