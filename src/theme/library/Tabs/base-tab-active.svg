@@ -18,7 +18,7 @@
 
    <linearGradient id="shade2" x1="0%" y1="0%" x2="0%" y2="100%">
      <stop offset="0%"   class="stop-color-odd-normal"  />
-     <stop offset="100%" class="stop-color-odd-normal-more-morer"  />
+     <stop offset="100%" class="stop-color-odd-normal-more-more"  />
    </linearGradient>
 
    <linearGradient id="whiteblack" x1="0%" y1="0%" x2="0%" y2="100%">
