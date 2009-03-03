@@ -43,7 +43,7 @@
    <rect x="3" y="3" rx="5" ry="5" width="44" height="44" style="fill: black;" filter="url(#blurshadow)" />
 
    <g mask="url(#maskouter)"> 
-	   <rect x="0" y="0" width="50" height="50" class="color-odd-normal-more-more" />
+	   <rect x="0" y="0" width="50" height="50" class="color-odd-normal-light" />
 	   <rect x="0" y="0" width="50" height="50" style="fill: white;" filter="url(#blurbasic)" mask="url(#maskbottom)"  />
 	   <g mask="url(#maskround)"> 
 		   <rect x="0" y="0" rx="5" ry="5" width="50" height="50" style="fill: white;" mask="url(#masktop)"  />
