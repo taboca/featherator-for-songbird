@@ -1,5 +1,0 @@
-This is Featherator Project for SongBird 
---
-Original (C) 2009 Marcio Galli 
-This project should be open soon - taboca@gmail.com for additional information
-
