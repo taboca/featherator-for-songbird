@@ -9,7 +9,13 @@ Build and customization system that generates an extension for Songbird, which s
 == Add your Feedback here==
 
 
+== Dependencies ==
+
+* export JAVA_HOME=/usr/local/jdk...
+* /usr/local/apache ant bin
+
 == References ==
+
 
 * http://wiki.songbirdnest.com/Developer/Developer_Intro/Feathers
 
