@@ -5,7 +5,7 @@
 
 <defs>
    	<mask id="maskbottom">
-		<rect x="0" y="0" width="100" height="34" style="fill: url(#whitetoblack);" />
+		<rect x="0" y="0" width="100" height="44" style="fill: url(#whitetoblack);" />
 	</mask>
    	<mask id="masktop">
 		<rect x="0" y="0" width="100" height="44" style="fill: url(#blacktowhite);" />
@@ -46,7 +46,7 @@
 	   <rect x="0" y="0" width="100" height="44" class="color-odd-normal" />
 	   <rect x="0" y="0" width="100" height="44" style="fill: white;" filter="url(#blurbasic)" mask="url(#maskbottom)"  />
 	   <g mask="url(#maskround)"> 
-		   <rect x="5" y="5" rx="10" ry="10" width="90" height="44" style="fill: white;" mask="url(#masktop)"  />
+		   <rect x="5" y="5" rx="5" ry="5" width="90" height="44" style="fill: white;" mask="url(#masktop)"  />
 	   </g>
   </g>
 
