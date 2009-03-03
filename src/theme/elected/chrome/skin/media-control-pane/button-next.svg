@@ -4,16 +4,16 @@
 
 <!-- play button --> 
 
-<image x="0" y="0" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-circle.svg"> </image>
+<image x="0" y="0" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-glassy.svg"> </image>
 <image x="0" y="0" width="30px" height="30px" xlink:href="../../../../library/Media/icon-next.svg"> </image>
 
-<image x="0" y="30" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-circle.svg"> </image>
+<image x="0" y="30" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-glassy.svg"> </image>
 <image x="0" y="30" width="30px" height="30px" xlink:href="../../../../library/Media/icon-next.svg"> </image>
 
-<image x="0" y="60" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-circle-active.svg"> </image>
+<image x="0" y="60" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-glassy-active.svg"> </image>
 <image x="0" y="60" width="30px" height="30px" xlink:href="../../../../library/Media/icon-next.svg"> </image>
 
-<image x="0" y="90" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-circle.svg"> </image>
+<image x="0" y="90" width="30px" height="30px" xlink:href="../../../../library/Media/base-button-glassy.svg"> </image>
 <image x="0" y="90" width="30px" height="30px" xlink:href="../../../../library/Media/icon-next.svg"> </image>
 
 </g>
