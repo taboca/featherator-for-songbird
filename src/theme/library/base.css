@@ -14,6 +14,23 @@
 	fill:rgb(210,120,230);
 } 
 
+.stop-color-odd-normal { 
+        stop-opacity:1;
+        stop-color:rgb(210,120,230);
+} 
+.stop-color-odd-normal-more { 
+        stop-opacity:1;
+        stop-color:rgb(220,125,240);
+} 
+.stop-color-odd-normal-more-more { 
+        stop-opacity:1;
+        stop-color:rgb(230,130,250);
+} 
+
+
+
+
+
 
 .color-normal {
         stop-opacity:1;

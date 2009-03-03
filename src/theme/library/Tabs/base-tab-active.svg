@@ -11,20 +11,20 @@
    >
 
 <defs>
-   <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="urlbarstart-from-color"  />
-     <stop offset="100%" class="urlbarstart-to-color"  />
+   <linearGradient id="shade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="stop-color-odd-normal-more-more"  />
+     <stop offset="100%" class="stop-color-odd-normal"  />
    </linearGradient>
 
-   <linearGradient id="popupshade2" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="urlbarstart-to-color"  />
-     <stop offset="100%" class="urlbarstart-from-color"  />
+   <linearGradient id="shade2" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"   class="stop-color-odd-normal"  />
+     <stop offset="100%" class="stop-color-odd-normal-more-morer"  />
    </linearGradient>
 
    <linearGradient id="whiteblack" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" style="stop-color:white;stop-opacity:.9" />
-     <stop offset="50%" style="stop-color:white;stop-opacity:.6" />
-     <stop offset="55%" style="stop-color:white;stop-opacity:.2" />
+     <stop offset="0%"   style="stop-color:white;stop-opacity:.9" />
+     <stop offset="50%"  style="stop-color:white;stop-opacity:.6" />
+     <stop offset="55%"  style="stop-color:white;stop-opacity:.2" />
      <stop offset="100%" style="stop-color:black;stop-opacity:.0" />
    </linearGradient>
 
@@ -39,8 +39,8 @@
 
 </defs>
 
-<rect x="0" y="3" width="300" height="26"  style="fill:url(#popupshade2)"  />
-<rect x="0" y="3" width="300" height="22"  style="stroke-width:4px;stroke:url(#popupshade);fill:none"  />
+<rect x="0" y="3" width="300" height="26"  style="fill:url(#shade2)"  />
+<rect x="0" y="3" width="300" height="22"  style="stroke-width:4px;stroke:url(#shade);fill:none"  />
 <rect x="0" y="0" width="300" height="22"  style="fill:url(#whiteglassshade)" mask="url(#classtop)"  />
 
 </svg>
