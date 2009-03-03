@@ -11,13 +11,15 @@
    >
 
 <defs>
+
    <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="urlbarstart-from-color"  />
-     <stop offset="100%" class="urlbarstart-to-color"  />
+     <stop offset="0%"   class="stop-color-odd-normal-more-more"  />
+     <stop offset="100%" class="stop-color-odd-normal"  />
    </linearGradient>
+
    <linearGradient id="popupshade2" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="urlbarstart-to-color"  />
-     <stop offset="100%" class="urlbarstart-from-color"  />
+     <stop offset="0%"   class="stop-color-odd-normal"  />
+     <stop offset="100%" class="stop-color-odd-normal-more-more"  />
    </linearGradient>
 
    <mask id="classtop">
