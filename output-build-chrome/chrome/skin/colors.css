@@ -597,7 +597,7 @@ treechildren#trDOMTreeBody::-moz-tree-row( selected ) {
 #faceplate_inactive > .hook > .left,
 #faceplate_inactive > .hook > .middle,
 #faceplate_inactive > .hook > .right {
-  min-width:10px;
+  min-width:8px;
   min-height:44px;
   max-height:44px;
 }
@@ -1242,6 +1242,16 @@ findbar {
 .tabbrowser-tab > .tab-image-right,
 .tabbrowser-tab > .tab-close-button {
   min-height: 26px !important;
+}
+
+
+#faceplate > .hook > .left,
+#faceplate > .hook > .middle,
+#faceplate > .hook > .right,
+#faceplate_inactive > .hook > .left,
+#faceplate_inactive > .hook > .middle,
+#faceplate_inactive > .hook > .right {
+  min-width:15px;
 }
 
 
