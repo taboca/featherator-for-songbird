@@ -13,9 +13,9 @@
 
 <defs>
    <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="bg-shadow"  />
-     <stop offset="60%" class="bg-transparent"  />
-     <stop offset="100%" class="bg-transparent"  />
+     <stop offset="0%" class="stop-shadow"  />
+     <stop offset="60%" class="stop-transparent"  />
+     <stop offset="100%" class="stop-transparent"  />
    </linearGradient>
 
 </defs>

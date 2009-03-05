@@ -12,13 +12,13 @@
  
 
 <defs>
-   <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="bg-to-color"  />
-     <stop offset="100%" class="bg-from-color"  />
+   <linearGradient id="shade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"   class="stop-even-light"  />
+     <stop offset="100%" class="stop-even-normal"  />
    </linearGradient>
 
 </defs>
 
-<rect x="0" y="0" width="10" height="24"  style="fill:url(#popupshade)" />
+<rect x="0" y="0" width="10" height="24"  style="fill:url(#shade)" />
 
 </svg>

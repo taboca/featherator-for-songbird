@@ -9,10 +9,29 @@
 
 /* Elected */
 
-.stop-even-normal-normal-light { 
+.stop-white {
+        stop-opacity:1;
+        stop-color:rgb(255,255,255);
+}
+
+.stop-shadow {
+        stop-opacity:.4;
+        stop-color:rgb(0,0,0);
+}
+
+.stop-transparent {
+        stop-color:rgb(255,255,255);
+        stop-opacity:0;
+}
+
+.stop-even-light { 
 	stop-color:rgb(255,240,255);
 	stop-opacity:1
 }
+.stop-even-normal-more-more { 
+	stop-color:rgb(255,210,255); 
+ 	stop-opacity:1; 
+} 
 .stop-even-normal-more { 
 	stop-color:rgb(250,200,250); 
  	stop-opacity:1; 
@@ -93,15 +112,6 @@
         stop-color:rgb(0,0,0);
 }
 .shadow-transparent {
-        stop-color:rgb(255,255,255);
-        stop-opacity:0;
-}
-
-.bg-shadow {
-        stop-opacity:.4;
-        stop-color:rgb(0,0,0);
-}
-.bg-transparent {
         stop-color:rgb(255,255,255);
         stop-opacity:0;
 }

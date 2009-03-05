@@ -13,10 +13,10 @@
 
 <defs>
    <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="color-normal-less-less"  />
-     <stop offset="10%" class="color-normal"  />
-     <stop offset="20%" class="color-normal-less-less"  />
-     <stop offset="100%" class="color-normal-less-less"  />
+     <stop offset="0%" class="stop-even-normal-less-less"  />
+     <stop offset="10%" class="stop-even-normal"  />
+     <stop offset="20%" class="stop-even-normal-less-less"  />
+     <stop offset="100%" class="stop-even-normal-less-less"  />
    </linearGradient>
 
 </defs>
