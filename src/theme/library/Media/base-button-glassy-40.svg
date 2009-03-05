@@ -46,7 +46,7 @@
 	   <rect x="0" y="0" width="40" height="40" class="color-odd-normal" />
 	   <rect x="0" y="0" width="40" height="40" style="fill: white;" filter="url(#blurbasic)" mask="url(#maskbottom)"  />
 	   <g mask="url(#maskround)"> 
-		   <rect x="0" y="0" rx="5" ry="5" width="40" height="40" style="fill: white;" mask="url(#masktop)"  />
+		   <rect x="3" y="3" rx="5" ry="5" width="31" height="40" style="fill: white;" mask="url(#masktop)"  />
 	   </g>
   </g>
 
