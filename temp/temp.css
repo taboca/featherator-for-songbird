@@ -22,1063 +22,1236 @@
 // 
 // END SONGBIRD GPL
 //
-*/
+ */
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); 
 @namespace html url("http://www.w3.org/1999/xhtml");
 
-/******************************************************************************
-> FEATHERS.CSS
-*******************************************************************************
-
-TABLE OF CONTENTS
-> BASE
-> TEXTBOXES
-> BUTTONS
-> TABS
-> NOTIFICATION
-> STATUS BAR
-> SELECTED STATES
-> DISABLED STATES
-> TITLE BAR
-> SERVICE PANE
-> DRAG BADGE
-> FACEPLATE
-> PLAYLIST COMMAND BAR
-> NAV BAR
-> DISPLAY PANES
-> SPLITTERS
-> DEVICE SUMMARY PAGE
-> FIRST RUN WIZARD
-> TRACK EDITOR
-> SMART PLAYLIST EDITOR
-> ABOUT DIALOG
-> FIND BAR
-> SCROLLBAR
-> WINDOW RESIZERS
-> FILE DOWNLOAD MANAGER (MOZAPP)
-> ABOUT CONFIG (MOZAPP)
-> PREFERENCES (MOZAPP)
-> FIREFOX API
-
-******************************************************************************
-
-This feather focuses on images more than styles defined though CSS. Often 
-times you'll update colors in this file but wont see any change in the final 
-appearance because there is a background-image that is drawn over it. There 
-are a few colors defined in this file that might be of interest:
-
-Often used by boxes that contain elements that update what is displayed in the 
-content pane. eg: service pane, find bar, top half of the device summary 
-page, command bar.
-> rgb(240,180,230);
-
-The following is used by all/most borders in the content area. eg: borders for 
-filer pane splitters, border for treecols and list headers.
-> rgb(200,140,190);
-
-The following is used by all/most borders in the chrome area. eg: splitter for 
-service pane, splitters for display panes, borders for windows/dialogs/wizards.
-> rgb(190,130,180)
-
-This file contains most but not all colors used in the feather. The styles in 
-the following files need to be there for technical reasons.
-> formsImport.css for text selection color
-> os-specific/max/overrides.css for Mac-specific styles
-> os-specific/unix/overrides.css for Linux-specific styles
-> os-specific/win/overrides.css for Windows-specific styles
-
-All the other CSS files in the feather and elsewhere in the app need major 
-clean up. Don't go there if you can help it, for now.
-
-******************************************************************************
-
-We are eager to hear your feedback - please drop by and say hi:
-
-songbird-dev Google Group:
-http://groups.google.com/group/songbird-dev
-
-IRC:
-irc.mozilla.org #songbird
-
-******************************************************************************/
 
 
 
-
-
-/******************************************************************************
-> BASE
-
-  Mostly vanilla elements that act as the starting point for rules to follow.
-******************************************************************************/
-wizard,
-dialog,
-window,
-prefwindow,
-panel {
-  background-color: rgb(250,190,240);
-}
-page {
-  background-color: rgb(240,180,230);
-}
-menupopup, 
-popup {
-  background-color:rgb(255,210,250);
-}
-
-
-
-
-tree,
-groupbox,
-radiogroup,
-listbox,
-richlistbox {
-  background-color:rgb(255,210,250);
-  border:1px solid rgb(200,140,190);
-}
-groupbox,
-radiogroup {
-  -moz-border-radius:3px;
-}
-groupbox caption {
-  border:1px solid rgb(200,140,190);  
-  /* rounded corners to match that of the groupbox element */
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-topright:3px;
-}
 
 description,
-caption,
 label,
+menu,
 treechildren::-moz-tree-cell-text {
-  color: rgb(40,40,40);
+  font-size:11px;
+}
+textbox html|textarea,
+textbox html|input {
+  font-size:11px !important;
 }
 
-listheader,
-treecols {
-  border-bottom:1px solid rgb(200,140,190);
+
+window {
+  padding:0px;
 }
-listheader,
-treecol {
-  border-right:1px solid rgb(200,140,190);
+listhead,
+treecol,
+treecolpicker {
+  min-height:15px !important;
+  max-height:15px !important;
 }
 listheader > label,
 treecol > label {
-  color: rgb(170,120,160);
+  font-size:9px !important;
+  /* :-( need this for aligning the text */
+  padding-bottom:1px !important;
+}
+listheader,
+treecol,
+treechildren::-moz-tree-cell {
+  /** used for reordering columns **/
+  border-left:1px solid transparent;
+  /** /used for reordering columns **/
+  padding:0px 4px;
+}
+treechildren::-moz-tree-cell {
+   /** used for reordering columns **/
+  border-right:1px solid transparent;
+  border-left:1px solid transparent;
+  /** /used for reordering columns **/
+}
+listheader {
+  border-left:none !important;
 }
 
-treecol[insertafter="true"],
-treechildren::-moz-tree-cell( insertafter ) {
-  border-right: 1px solid rgb(190,130,180); !important;
-}
-treecol[insertbefore="true"],
-treechildren::-moz-tree-cell( insertbefore ) {
-  border-left: 1px solid rgb(190,130,180); !important;
-}
-richlistitem {
-  border-bottom: 1px solid rgb(190,130,180);
-}
 
-menu,
-menuitem,
-listitem {
-  background-color: rgb(255,210,250);
-}
-
-/* treecolAutoCompleteComment is document.title in the case of the location bar */
-.autocomplete-treebody::-moz-tree-cell-text( treecolAutoCompleteComment ) {
-  color: rgb(190,130,180);
-}
-
-/* progress meters in trees do not support background-images or list-style-images
-   we'll fall back on a translucent solid color
-   note: rgba(0~255, 0~255, 0~255, 0.0~1.0) */
 treechildren::-moz-tree-progressmeter {
-  color:rgba(0,0,0,0.50);
+  margin:0;
+  padding-top:5px;
+  padding-bottom:5px;
+  min-height:18px;
 }
 
-treechildren::-moz-tree-separator {
-  border-top: 1px dotted rgb(200,140,190);
-}
-
-toolbar,
-menubar,
-.generic-bar {
-  background-color: rgb(240,180,230);
-}
-toolbar,
-menubar,
-.generic-bar {
-  border-bottom:1px solid rgb(190,130,180);
-}
-toolbarseparator {
-  background-color:rgb(190,130,180);
-}
-
-/* shortcut keys displayed in menus */
-.menu-accel,
-.menu-iconic-accel {
-  color:rgb(190,130,180);
-}
-
-tooltip {  
-  background-color: rgb(255,255,215);
-}
-progressmeter,
-sb-status-progressmeter {
-  border:1px solid rgb(190,130,180);
-}
-
-.dialog-button-box,
-.wizard-buttons,
-.device-tab-button-box,
-.paneDeckContainer+hbox,
-#addonsMsg+vbox {
-  background-color:rgb(240,180,230);
-  border-top:1px solid rgb(190,130,180);
+treecolpicker > .tree-columnpicker-icon {
+  /* :-( need this for aligning the button */
+  padding:0px 1px 1px 1px;
 }
 
 
+.servicepane-tree > treechildren::-moz-tree-row {
+  min-height:20px !important;
+}
 
-/******************************************************************************
-> TEXTBOXES
+.servicepane-tree {
+  background-color:transparent;
+}
+
+/* rm icons for container nodes */
+.servicepane-tree > treechildren::-moz-tree-image( servicesource-bookmarks ),
+.servicepane-tree > treechildren::-moz-tree-image( servicesource-playlists ),
+.servicepane-tree > treechildren::-moz-tree-image( folder ) {
+  list-style-image:none;
+  width:0px;
+  height:0px;
+}
+
+
+.autocomplete-treebody::-moz-tree-image( favicon ) {
+  /* :-( need this for making sure the favicon is never bigger than 16x16 */
+  max-width:16px !important;
+  max-height:16px !important;
+  min-width:16px !important;
+  min-height:16px !important;
+}
+.autocomplete-treebody::-moz-tree-cell,
+.autocomplete-treebody::-moz-tree-cell-text {
+  padding:0 2px;
+  margin:0;
+}
+
+
+#tabstrip-container {
+  padding:0px;
+  margin:0px;
+}
+
+.tabbrowser-tabs {
+  padding:0px;
+}
+
+.tabbrowser-tab {
+  -moz-box-align: stretch;
+  -moz-box-pack: center;  
+  /* HIDDEN */
+  -moz-border-radius: 0;
   
-  Styles for textboxes and elements that we want to look like textboxes
-******************************************************************************/
-textbox,
-.datetimepicker-input-subbox,
-.datetimepicker-year,
-sb-rating,
+  margin: 0px;
+  /** 1px right for the delimiter, 3px bottom for the tab bar separator **/
+  padding: 0px 1px 3px 0px !important;
+}
+
+/* HIDDEN */
+.tabbrowser-tab:not([selected="true"]) > .tab-image-middle > .tab-icon > .tab-icon-image {
+  opacity:0.66;
+}
+.tabbrowser-tab + .tabbrowser-tab {
+  /* rm 1px margin between vanilla tabs */
+  margin-left: 0px !important;
+}
+
+.tabbrowser-tab > .tab-image-middle,
+.tabbrowser-tab > .tab-image-left,
+.tabbrowser-tab > .tab-image-right,
+.tabbrowser-tab > .tab-close-button {
+  margin: 0px;
+  padding: 0px;
+  min-height: 22px !important;
+}
+
+.tabbrowser-tab > .tab-image-left,
+.tabbrowser-tab > .tab-image-right {
+  width:4px;
+}
+
+.tabbrowser-tab > hbox > label.tab-text {
+  text-align:left;
+}
+
+
+#nav-bar toolbarbutton {  
+  -moz-background-clip:border;
+
+  min-width:22px;
+    
+  min-height:22px;
+  max-height:22px;
+  padding:0 !important;
+  margin:0;
+}
+
+
+
+
+menubar > menu {
+  background-color:transparent;
+  padding:4px 8px !important;
+}
+
+menulist {
+  min-width:0px;
+  min-height:0px;
+  padding:0px;
+}
+.menulist-label {
+  padding:3px 8px;
+  margin:0;
+}
+
+
 .menulist-editable-box {
-  background-color:rgb(255,210,250);
-
-  border-top:1px solid rgb(255,255,255);
-  border-right:1px solid rgb(195,135,185);
-  border-bottom:1px solid rgb(255,240,250);
-  border-left:1px solid rgb(195,135,185);
+  margin:2px 0px 1px 2px;
+  padding:0px 4px 1px 4px;
 }
 
-/*
-  Edited state - mainly used for the track editor
-*/
-textbox[edited="true"],
-sb-rating[edited],
-searchbar:not([empty="true"])[livesearchmode="true"] .search-go-button,
-searchbar:not([empty="true"])[livesearchmode="true"] .searchbar-textbox {
-  background-color:rgb(255,255,215) !important;
-  background-color:rgb(255,215,255) !important;
-}
-
-/*
-  Focused state
-*/
-textbox[focused="true"]:not(.plain),
-searchbar[focused="true"] .search-go-button,
-searchbar[focused="true"] .searchbar-textbox {
-  background-color: rgb(255,255,235) !important;
-  background-color: rgb(255,235,255) !important;
-}
-
-/*
-  Invalid state 
-*/
-textbox[invalid="true"],
-textbox[focused="true"][invalid="true"] {
-  background-color:rgb(255,200,200) !important;
-  color:rgb(235,40,40);
-} 
-textbox[empty="true"],
-searchbar[empty="true"] > hbox > hbox > .searchbar-textbox {
-  color:rgb(190,130,180);
-}
-
-
-
-/******************************************************************************
-> BUTTONS
-
-  Normal buttons, buttons in toolbars, menu buttons, and menubutton buttons.
-******************************************************************************/
 
 button,
 toolbarbutton,
-menulist {
-  -moz-border-radius:3px;
-  border:1px solid rgb(255,255,255);
+.clickhold-button {
+  padding:0px;
 }
 
-button:focus,
-toolbarbutton:focus,
-checkbox:focus > .checkbox-check,
-radio[focused="true"] > .radio-check,
-menulist:focus {
-  outline:2px solid rgba(40,40,40,0.33);
-  outline-offset:0px;
-  -moz-outline-radius:5px;
+/* add padding here because buttons come in a few flavors
+   ie: image only, text only, image and text */
+.button-box {
+  padding:3px 8px;
 }
-radio[focused="true"] > .radio-check {
-  /* this makes the outline look like a circle which matches the radio button well */
-  -moz-outline-radius:8px;
-}
-button.button-menubutton-button:focus {
-  /* this is the best we can do - the right outline is 1px offset too much */
-  outline-offset:1px;
-  -moz-outline-radius-topright:0px;
-  -moz-outline-radius-bottomright:0px;
+.button-text {
+  padding:0px;
+  margin:0px;
 }
 
 
-
-/******************************************************************************
-> TABS
-
-  Vanilla tabs - they can be on top, at the bottom, left or right.
-******************************************************************************/
-/**
-  Base
-**/
-tabbox {
-  background-color:rgb(250,190,240);
+toolbarbutton {
+  min-width:0px;
+  min-height:0px;
+  padding:2px 4px !important;
 }
-tabpanels {
-  background-color:rgb(255,210,250);
+notification > button {
 }
-tabs {
-  background-color: rgb(240,180,230);
+notification > button > .button-box {
+  padding:2px 4px !important;
 }
-tab {
-  border:1px solid rgb(190,130,180);
-}
-
-/**
-  Top
-**/
-tabs[orient="horizontal"] {
-  border-bottom:1px solid rgb(190,130,180);
-}
-tabs[orient="horizontal"] tab {
-  -moz-border-radius:0px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-topright:3px;
-}
-tabs[orient="horizontal"] tab[selected="true"] {
-  border:1px solid rgb(190,130,180);
-  border-bottom:1px solid rgb(255,240,250);
-}
-
-/**
-  Bottom
-**/
-tabs[orient="horizontal"].tabs-bottom {
-  border-top:1px solid rgb(190,130,180);
-}
-tabs[orient="horizontal"].tabs-bottom tab {
-  -moz-border-radius:0px;
-  -moz-border-radius-bottomleft:3px;
-  -moz-border-radius-bottomright:3px;
-}
-tabs[orient="horizontal"].tabs-bottom tab[selected="true"] {
-  border:1px solid rgb(190,130,180);
-  border-top:1px solid rgb(255,240,250);
-}
-
-/**
-  Right
-**/
-tabs[orient="vertical"] {
-  border-left:1px solid rgb(190,130,180);
-}
-tabs[orient="vertical"] tab {
-  -moz-border-radius:0px;
-  -moz-border-radius-topright:3px;
-  -moz-border-radius-bottomright:3px;
-}
-tabs[orient="vertical"] tab[selected="true"] {
-  border:1px solid rgb(190,130,180);
-  border-left:1px solid rgb(255,240,250);
-}
-
-/**
-  Left
-**/
-tabs[orient="vertical"].tabs-left {
-  border-right:1px solid rgb(190,130,180);
-}
-tabs[orient="vertical"].tabs-left tab {
-  -moz-border-radius:0px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-bottomleft:3px;
-}
-tabs[orient="vertical"].tabs-left tab[selected="true"] {
-  border:1px solid rgb(190,130,180);
-  border-right:1px solid rgb(255,240,250);
-}
-
-
-
-/******************************************************************************
-> NOTIFICATION
-
-  Used for displaying notification hats in the browser and metadata editor.
-******************************************************************************/
-notification,
-.dialog-notification {
-  border-bottom:1px solid rgb(190,130,180);
-}
-notification[type="info"],
-.dialog-notification.notification-info {
-  /* blue */
-  background-color: rgb(214,241,250);
-}
-notification[type="warning"],
-.dialog-notification.notification-warning {
-  /* yellow */
-  background-color: rgb(249,249,202);
-}
-notification[type="critical"],
-.dialog-notification.notification-critical {
-  /* red */
-  background-color: rgb(251,161,165);
-}
-
-
-
-/******************************************************************************
-> STATUS BAR
-
-  One for the browser and another for the service pane
-******************************************************************************/
-statusbar {
-  border-top:1px solid rgb(190,130,180);
-}
-#servicepane-status-bar-box,
-#status-bar-box {
-  border-top:1px solid rgb(190,130,180);
-  border-bottom:1px solid rgb(190,130,180);
-}
-.service-pane-spring-load-button,
-.servicepane-toolbar-newitem-button,
-sb-displaypane-button > button {
-  border-right: 1px solid rgb(200,140,190);
-  border-left: 1px solid rgb(200,140,190);
-}
-
-
-
-/******************************************************************************
-> SELECTED STATES
-******************************************************************************/
-
-/**
-  Unfocused
-**/
-listitem[selected="true"],
-richlistitem[selected="true"],
-treechildren::-moz-tree-row( selected, even ) {
-  background-color: rgb(245,185,235);
-}
-/* alternating rows for trees */
-treechildren::-moz-tree-row( selected, odd ) {
-  background-color: rgb(240,180,230);
-}
-
-/**
-  Focused
-**/
-listbox:focus listitem[selected="true"],
-richlistbox:focus richlistitem[selected="true"],
-menu[_moz-menuactive="true"],
-menuitem[_moz-menuactive="true"],
-treechildren.autocomplete-treebody::-moz-tree-row( selected even ),
-treechildren::-moz-tree-row( selected focus even ) {
-  background-color: rgb(220,120,190);
-}
-/* alternating rows for trees */
-treechildren.autocomplete-treebody::-moz-tree-row( selected odd ),
-treechildren::-moz-tree-row( selected focus odd ) {
-  background-color: rgb(200,100,170);
-}
-
-/**
-  Text
-**/
-listitem[selected="true"] label,
-richlistitem[selected="true"] label,
-richlistitem[selected="true"] description,
-menu[_moz-menuactive="true"] > label,
-menuitem[_moz-menuactive="true"] > label,
-.autocomplete-treebody::-moz-tree-cell-text(selected),
-treechildren::-moz-tree-cell-text( selected ),
-treechildren::-moz-tree-cell-text( selected, focus ) {
-  color:rgb(0,0,0);
-}
-
-
-
-/******************************************************************************
-> DISABLED STATES
-******************************************************************************/
-*[disabled="true"] {
-  opacity:0.5;
-}
-richlistitem[isDisabled="true"] > * {
-  opacity:0.5;
-}
-dropmarker[disabled="true"] > .dropmarker-icon {
-  opacity:0.5;
-}
-toolbarbutton[disabled="true"] > .toolbarbutton-icon,
-toolbarbutton[disabled="true"] > .toolbarbutton-menu-dropmarker,
-toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
-  opacity:0.25;
-}
-.service-pane-spring-load-button[disabled="true"] >.button-box {
-  opacity:0.5;
-}
-
-
-
-/******************************************************************************
-> TITLE BAR
-******************************************************************************/
-#sb-sys-title-title {
-  font-weight:bold;
-}
-#titlebar_box {
-  border-bottom:1px solid rgb(190,130,180);
-}
-/* used for Linux and Windows only - this is the file menu displayed in the title bar*/
-#main-menubar > menu[_moz-menuactive="true"][open="true"] {
-  background-color:rgb(255,255,255);
-}
-
-
-
-/******************************************************************************
-> SERVICE PANE
-******************************************************************************/
-#servicepane {
-  background-color: rgb(240,180,230);
-}
-.servicepane-tree > treechildren::-moz-tree-cell-text(selected) {
-  font-weight:bold;
-}
-/* container nodes get special treatment so they look unclickable */
-.servicepane-tree > treechildren::-moz-tree-cell-text( servicesource-bookmarks ),
-.servicepane-tree > treechildren::-moz-tree-cell-text( servicesource-playlists ),
-.servicepane-tree > treechildren::-moz-tree-cell-text( folder ) {
-  color:rgb(170,120,160) !important;
-  font-weight:normal !important;
-}
-
-/* rm bottom border for treecols */
-#servicepane treecols {
-  border:none;
-}
-/* rm empty.png */
-.servicepane-tree {
-  background-image:none;
-}
-.servicepane-tree > treechildren::-moz-tree-row {
-  /* rm alternating row colors */
-  background-color:transparent;
-
-  /* borders for reordering rows */
-  border-top:1px solid transparent;
-  border-bottom:1px solid transparent;
-}
-
-.servicepane-tree > treechildren::-moz-tree-row( dropBefore ) {
-  border-top:1px solid rgb(190,130,180); !important;
-}
-.servicepane-tree > treechildren::-moz-tree-row( dropAfter ) {
-  border-bottom:1px solid rgb(190,130,180); !important;
-}
-
-/* this is th style used when items are dragged over applicable rows */
-.servicepane-tree > treechildren::-moz-tree-row( dropOn ) {
-  background-color:rgb(255,240,250);
-  border:2px solid rgb(190,130,180); !important;
-  -moz-border-radius:6px;
-}
-
-
-
-/******************************************************************************
-> DRAG BADGE
-
-  Appears when dragging media items - it's a combination of an image and a badge with a count
-******************************************************************************/
-.sb-playlist-drag-badge:not([value="1"]) {
-  color:rgb(255,210,250);
-  font-weight: bold;
-  background-color: rgb(0,0,0);
-  -moz-border-radius: 4px;
-}
-
-
-
-/******************************************************************************
-> FACEPLATE
-
-  Appears when dragging media items - it's a combination of an image and a badge with a count
-******************************************************************************/
-.faceplate-text {
-  color:rgb(255,200,245);
-}
-#sb-player-title-label-label {
-  font-weight:bold;
-}
-#sb-player-artist-label-label,
-#sb-player-album-label-label {
-  color:rgb(230,170,220);
-}
-#sb-player-timeelapsed-label > label,
-#sb-player-totaltime-label > label {
-  color:rgb(195,135,185);
+.sb-commands-toolbar toolbarbutton .toolbarbutton-text,
+notification > button > .button-box > .button-text {
   font-size:9px !important;
+  padding:0;
+  margin:0;
 }
 
 
-
-/******************************************************************************
-> PLAYLIST COMMAND BAR
-
-  A bar used to hold buttons for media lists - eg: downloads, smart playlists
-******************************************************************************/
-.sb-commands-toolbar {
-  background-color: rgb(240,180,230);
-  border-top:1px solid rgb(190,130,180);
+toolbarbutton[type="menu"] > .toolbarbutton-icon {
+  margin-left:2px;
 }
 
-
-
-/******************************************************************************
-> NAV BAR
-******************************************************************************/
-
-#nav-bar toolbarbutton {  
-  background-color:rgb(255,210,250);
-  border:2px solid rgb(240,190,230);
-  -moz-border-radius:2px;
+toolbarbutton[type="menu"],
+toolbarbutton[type="menu-button"] {
+  padding:2px !important;
 }
-#nav-bar toolbarbutton button {
-  -moz-border-radius:2px;
-}
+
 #nav-bar toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-button {
-  border-right:1px solid rgb(240,190,230);
+  /* HIDDEN */
+  /* rm rounded corners because the menubutton is displayed to the right of the button */
+  -moz-border-radius-topright:0px !important;
+  -moz-border-radius-bottomright:0px !important;
+
+  min-height:20px;
+  max-height:20px;
+}
+.toolbarbutton-menubutton-button > .toolbarbutton-icon {
+  min-height:16px !important;
+  min-width:16px !important;
+  max-height:16px !important;
+  max-width:16px !important;
 }
 
 
-/**
-  Location bar and search bar in the nav bar
-**/
-.locationbar-textbox,
-.searchbar-textbox,
-#searchbar .search-go-button {
-  background-color:rgb(230,230,230);
-
-  border-top:3px solid rgb(240,190,230);
-  border-right:1px solid rgb(240,190,230);
-  border-bottom:1px solid rgb(195,135,185);
-  border-left:1px solid rgb(240,190,230);
+button > dropmarker.button-menubutton-dropmarker,
+button > .button-box > dropmarker.button-menu-dropmarker,
+toolbarbutton > dropmarker.toolbarbutton-menubutton-dropmarker {
+  padding-top:1px;
 }
-.searchbar-engine-button {  
-  background-color:rgb(255,255,255);
-    
-  -moz-border-radius:0 !important;
-  -moz-border-radius-topleft:2px !important;
-  -moz-border-radius-bottomleft:2px !important;
-  border:1px solid rgb(240,190,230);
-}
-/* highlight the menu item when it's available */
-.addengine-item {
-  background-color:rgb(255,255,215);
+dropmarker {
+  width: 11px;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-image-region: auto;
+  margin:0;
 }
 
 
-
-/******************************************************************************
-> DISPLAY PANES
-******************************************************************************/
-.sb-displaypane-header {
-  border-bottom:1px solid rgb(190,130,180);
+dropmarker:hover:active {
+/*  padding: 2px 0 0 2px !important;*/
 }
 
-.empty-message {
-  -moz-border-radius:8px;
-  background-color:rgb(235,175,225);
-  border:1px solid rgb(255,240,250);
-  color:rgb(255,255,255);
+
+.button-menubutton-button,
+button[type="menu"] > .button-box {
+  margin:0 !important;
+  padding:0px;
+  
+  background-image:none;
+  background-color:transparent;
 }
 
-.drop-message {
-  color:rgb(255,255,255);
+.button-menubutton-button > .button-box {
+  padding:3px 0px;
+}
+button[type="menu"],
+button[type="menu-button"] {
+  padding:0;
 }
 
-/******************************************************************************
-> SPLITTERS
-******************************************************************************/
+
+/** 
+*******************************************************************************
+DATEPICKER see the RICHLISTBOX for box styles
+*******************************************************************************
+*/
+.datepicker-gridlabel[selected="true"] {
+}
+
+
+/** 
+*******************************************************************************
+MENUS, CONTEXTUAL MENUS, and MENUPOP-UPS
+*******************************************************************************
+*/
+
+
+menuitem > label,
+menupopup > menu > label,
+popup > menu > label {
+  padding:0;
+  margin:0;
+}
+
+
+/** 
+*******************************************************************************
+THE SPLITTERS
+These let the user resize the frames in your box model.
+*******************************************************************************
+*/ 
+
+#filter_splitter > grippy {
+  visibility:collapse;
+}
+
+#displaypane_right_sidebar_splitter[state="collapsed"],
+#displaypane_contentpane_bottom_splitter[state="collapsed"],
+#displaypane_servicepane_bottom_splitter[state="collapsed"] {
+}
+#servicepane_splitter[state="collapsed"] {
+  width:0px;
+  min-width:0px;
+  max-width:0px;
+  border:none !important;
+}
+
+#servicepane_splitter[state="collapsed"]:hover,
+#displaypane_right_sidebar_splitter[state="collapsed"]:hover,
+#displaypane_contentpane_bottom_splitter[state="collapsed"]:hover,
+#displaypane_servicepane_bottom_splitter[state="collapsed"]:hover {
+}
+
+#servicepane_splitter[state="collapsed"]:active,
+#displaypane_right_sidebar_splitter[state="collapsed"]:active,
+#displaypane_contentpane_bottom_splitter[state="collapsed"]:active,
+#displaypane_servicepane_bottom_splitter[state="collapsed"]:active {
+}
+
 #servicepane_splitter,
 #filter_splitter,
 #displaypane_right_sidebar_splitter {
-  background-color:rgb(240,180,230);
-  border-right:1px solid rgb(190,130,180);
-  border-left:1px solid rgb(190,130,180);
-}
-#servicepane_splitter {
-  border-bottom:1px solid rgb(190,130,180);
-}
-#filter_splitter {
-  border-right:1px solid rgb(200,140,190);
-  border-left:1px solid rgb(200,140,190);  
+  max-width:3px;
+  min-width:3px;
 }
 
 #displaypane_contentpane_bottom_splitter,
 #displaypane_servicepane_bottom_splitter,
 .playlist-splitter,
 .playlist-web-splitter {
-  border-bottom:1px solid rgb(190,130,180);
-  border-top:1px solid rgb(190,130,180);
+  min-height:4px;
+  max-height:4px;
 }
-.playlist-splitter {
-  border-top:1px solid rgb(200,140,190);
-  border-bottom:1px solid rgb(200,140,190);  
+
+.playlist-splitter:active,
+.playlist-web-splitter:active {
 }
-.playlist-web-splitter {
-  border-bottom:1px solid rgb(200,140,190);  
+
+.playlist-splitter[state="collapsed"],
+.playlist-web-splitter[state="collapsed"] {
 }
 
 
+/** 
+*******************************************************************************
+TEXTBOX
+*******************************************************************************
+*/
 
-/******************************************************************************
-> DEVICE SUMMARY PAGE
-
-  The page that is displayed when the device node is clicked on - iPod, MTP
-******************************************************************************/
-/* the top half of the summary page + background for tabs (ipod only) */
-#overall_device_info_box,
-#device_management_tabs {
-  background-color: rgb(240,180,230);
-}
-/* label for the legend that shows total file size */
-.capacity_value_label {
-  color:rgb(190,130,180);
-}
-.device-capacity-music,
-.device-capacity-legend-color-box[type="music"] {
-  background-color: rgb(0,105,245);
-}
-.device-capacity-video,
-.device-capacity-legend-color-box[type="video"] {
-  background-color: rgb(70,200,0);
-}
-.device-capacity-other,
-.device-capacity-legend-color-box[type="other"] {
-  background-color: rgb(255,210,0);
-}
-.device-capacity-free,
-.device-capacity-legend-color-box[type="free"] {
-  background-color: rgb(235,175,225);
-}
-/* the device capacity bar has 9 notches (10 sections)
-   note: rgba(0~255, 0~255, 0~255, 0.0~1.0) */
-.device-capacity-bar-notches hbox+hbox {
-  border-left: 1px solid rgba(0,0,0,0.1);
-}
-/* box that holds all the buttons for sync settings */
-.device-tab-button-box {
-  -moz-border-radius:3px;
-  border:1px solid rgb(190,130,180);
+textbox[disabled="true"],
+html|*.numberbox-input[disabled="true"] {
+  cursor: default;
 }
 
 
+/**
+*******************************************************************************
+MISC
+*******************************************************************************
+*/
 
-/******************************************************************************
-> WIZARDS
-******************************************************************************/
-
-.wizard-header {
-  background-color: rgb(240,180,230);
-  border-bottom:1px solid rgb(190,130,180);
+button.button-menubutton-button,
+button.button-menubutton-button:active {
+  border: none !important;
+  padding: 0;
+  margin: 0;
 }
 
-.sb-wizard-header {
-  font-weight:bold;
-  font-size:120%;
+/** 
+*******************************************************************************
+LISTBOX
+*******************************************************************************
+*/
+
+#working-list {
+  border-top:none;
+  border-bottom:none;
+  border-left:none;
 }
 
+/** 
+*******************************************************************************
+PREFERENCES
+*******************************************************************************
+*/
+
+/* View buttons */
+.viewSelector  {
+}
+
+#viewGroup radio:hover {
+  background:transparent !important;
+}
+
+/* Extensions */
 
 
-/******************************************************************************
-> FIRST RUN WIZARD
-******************************************************************************/
-.sb-first-run-eula-browser {
-  border:1px solid rgb(190,130,180);
+#extensionsBox {
+}
+#extensionsBox richlistitem {
+}
+#extensionsBox richlistitem[hidden="false"]:last-child {
 }
 
 
 
-/******************************************************************************
-> TRACK EDITOR
-******************************************************************************/
-/* the track editor has tabs and tabpanels but are hidden for the time being
-   this rule makes the tabpanels have the same background color as a dialog window */
-#track_editor tabpanels {
-  background-color: rgb(250,190,240);
+
+
+
+
+#sb-sys-title-title {
+  padding:1px 5px 2px 5px !important;
 }
-.art {
-  background-color:rgb(255,210,250);
-  border:1px solid rgb(195,135,185);
-}
-.art:focus {
-  background-color:rgb(255,255,235);
-  border:2px solid rgb(195,135,185);
-}
-
-
-
-/******************************************************************************
-> SMART PLAYLIST EDITOR
-
-  Dialog for editing properties of smart playlists.
-******************************************************************************/
-/* the box that contains n number of rules */
-.drawer-box {
-  background-color:rgb(250,190,240);
-  border:1px solid rgb(190,130,180);
-  -moz-border-radius:3px;
-}
-
-
-
-/******************************************************************************
-> ABOUT DIALOG
-******************************************************************************/
-#about_browser {
-  border-top:1px solid rgb(190,130,180);
-}
-
-
-
-/******************************************************************************
-> FIND BAR
-******************************************************************************/
-findbar {
-  background-color:rgb(240,180,230);
-  border-bottom:1px solid rgb(190,130,180);
-}
-/* text that shows the status of the search - eg: "Phrase now found" */
-findbar > .findbar-container > .findbar-find-status {
-  color:rgb(190,130,180);
-}
-
-
-
-/******************************************************************************
-> SCROLLBAR
-
-  These styles are used for scrollbars and scroll buttons in the chrome AND in the browser window
-******************************************************************************/
-scrollbarbutton,
-scrollbar > slider > thumb {   
-  border:1px solid rgb(200,140,190);
-  -moz-border-radius:2px;
-}
-
-
-
-/******************************************************************************
-> WINDOW RESIZERS
-  
-  Draw a border around windows that are resizable - Linux and Windows only
-  Make sure to update skin/window/bg-resizer-bottom-corner.png to match changes made here
-******************************************************************************/
-.sb-sys-outer-frame-resizer {
-  background-color:rgb(200,140,190);
-}
-.sb-sys-outer-frame-resizer[dir="top"],
-.sb-sys-outer-frame-resizer[dir="bottom"],
-.sb-sys-outer-frame-resizer-topleft,
-.sb-sys-outer-frame-resizer-topright {
-  border-top:1px solid rgb(190,130,180);
-}
-.sb-sys-outer-frame-resizer-bottomleft,
-.sb-sys-outer-frame-resizer-bottomright,
-.sb-sys-outer-frame-resizer[dir="bottom"] {
-  border-bottom:1px solid rgb(190,130,180);
-}
-.sb-sys-outer-frame-resizer[dir="left"],
-.sb-sys-outer-frame-resizer[dir="right"],
-.sb-sys-outer-frame-resizer-rightbottom,
-.sb-sys-outer-frame-resizer-leftbottom,
-.sb-sys-outer-frame-resizer-righttop,
-.sb-sys-outer-frame-resizer-lefttop,
-.sb-sys-outer-frame-resizer-topright,
-.sb-sys-outer-frame-resizer-bottomright {
-  border-right:1px solid rgb(190,130,180);
-}
-.sb-sys-outer-frame-resizer[dir="left"],
-.sb-sys-outer-frame-resizer[dir="right"],
-.sb-sys-outer-frame-resizer-rightbottom,
-.sb-sys-outer-frame-resizer-leftbottom,
-.sb-sys-outer-frame-resizer-righttop,
-.sb-sys-outer-frame-resizer-lefttop,
-.sb-sys-outer-frame-resizer-topleft,
-.sb-sys-outer-frame-resizer-bottomleft {
-  border-left:1px solid rgb(190,130,180);
-}
-
-
-
-/******************************************************************************
-> FILE DOWNLOAD MANAGER (MOZAPP)
-******************************************************************************/
-#downloadManager > #downloadView {
-  background-color:rgb(255,210,250);
-}
-#downloadManager > #search {
-  background-color: rgb(240,180,230);
-  border-top:1px solid rgb(190,130,180);
-}
-
-
-
-/******************************************************************************
-> ABOUT CONFIG (MOZAPP)
-******************************************************************************/
-#filterRow {
-  background-color: rgb(240,180,230);
-  border-bottom:1px solid rgb(190,130,180);
-}
-
-
-
-/******************************************************************************
-> PREFERENCES (MOZAPP)
-******************************************************************************/
-/* this dude is really a radiogroup... */
-.paneSelector {
-  background-color: rgb(240,180,230) !important;
-  border-right:1px solid rgb(190,130,180) !important;
-}
-.paneSelector > radio[selected="true"] {
-  background-color:rgb(255,210,250) !important;
-}
-
-/* this dude is really a radiogroup... */
-#viewGroup {
-  background-color: rgb(240,180,230);
-  border-bottom: 1px solid rgb(190,130,180) !important;
-}
-/* make the radio button look like a tab */
-#viewGroup > radio {
-  background-color:rgb(255,240,250) !important;
-  border:1px solid rgb(190,130,180); !important;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-topright:3px;
-}
-#viewGroup > radio[selected="true"] {
-  background-color:rgb(255,210,250) !important;
-  border:1px solid rgb(190,130,180) !important;
-  border-bottom:1px solid rgb(255,240,250) !important;
-}
-
-#paneAddons {
-  /* adding a background color to fake making the add-on window look like a normal pref pane */
-  background-color:rgb(240,180,230);
-}
-
-
-
-/******************************************************************************
-> FIREFOX API
-
-  Songbird does not use the following rules but add-ons ported from Firefox might.
-******************************************************************************/
-html|*.error-text,
-.error-text {
-  color: rgb(255,0,0);
-}
-
-/* text that looks like a link */
-.text-link {
-  color:#1694d9;
-  text-decoration:none;
-}
-.text-link:hover {
-  text-decoration:underline;
-} 
-.text-link:hover:active {
-} 
-.text-link[visited="true"] {
-}
-
 
 #titlebar_box {
-  border-bottom:0px;
+  min-height:22px !important;
+  height:22px !important;
+  max-height:22px !important;
+}
+sb-sys-titlebar {
+  overflow:hidden;
+}
+#sb-sys-titlebar-primary-content {
+  -moz-box-align:center !important;
+}
+#faceplate-tool-bar > * {
+  margin:2px 0px 2px 4px;
+}
+#faceplate-tool-bar > sb-nowplaying-rating {
+  margin:0px 0px 0px 4px !important;
+}
+#faceplate-tool-bar > sb-nowplaying-rating > sb-rating {
 }
 
-#nav-bar toolbarbutton {
-  border:1px solid white;
-  -moz-border-radius:4px;
-  border-color: rgb(250,190,240) rgb(255,210,250)  rgb(255,210,250); 
+
+
+#control_pane_box {
+/*  border-top:1px solid brown;*/
+}
+#control_buttons_box {
+  padding:0 5px 0 10px;
+}
+#shuffle_repeat_box {
+  padding:0 9px 0 5px;
+}
+#control_buttons_box > .sb-player-button {
+  margin:0 1px;
+}
+#shuffle_repeat_box > .sb-player-button {
+  margin:0 1px 0 2px;
+}
+#volume_box {
+  padding:0 6px 0px 1px;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  min-height:52px;
+}
+#control_pane {
+  padding:0 5px;
+}
+
+#control_pane_box > .hook > .left,
+#control_pane_box > .hook > .right,
+#control_pane_box > .hook > .middle {
+  min-width:16px;
+  min-height:52px;
+}
+
+
+#titlebar_box > .hook > .left,
+#titlebar_box > .hook > .right {
+  min-width:16px;
+  min-height:22px;
+}
+#titlebar_box > .hook > .middle {
+  min-height:22px;
 }
 
 
 
 
-/* Textboxes */
 
-textbox[edited="true"],
-sb-rating[edited],
-searchbar:not([empty="true"])[livesearchmode="true"] .search-go-button,
-searchbar:not([empty="true"])[livesearchmode="true"] .searchbar-textbox {
-  background-color:rgb(255,215,255) !important;
+
+
+#nav-bar {
+  padding:3px 4px !important;
+  max-height:28px;
+}
+#nav-bar > * {
+  margin:0 2px !important;
+}
+#nav-bar > observes {
+  margin:0 !important;
 }
 
+
+#nav_bar_box > .hook > .left,
+#nav_bar_box > .hook > .right {
+  min-width:16px;
+}
+#nav_bar_box > .hook > .middle {
+}
+
+
+
+
+
+
+
+
+
+
+
+.closable-box-image,
+treechildren::-moz-tree-twisty(closed),
+.closable-box-image[open="true"],
+treechildren::-moz-tree-twisty(open) {
+  width: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+treechildren#trDOMTreeBody::-moz-tree-row( selected ) {
+  background-color:;
+}
+
+
+
+#faceplate_box {
+  padding:2px 8px;
+  min-height:52px;
+}
+#faceplate > .hook > .left,
+#faceplate > .hook > .middle,
+#faceplate > .hook > .right,
+#faceplate_inactive > .hook > .left,
+#faceplate_inactive > .hook > .middle,
+#faceplate_inactive > .hook > .right {
+  min-width:8px;
+  min-height:44px;
+  max-height:44px;
+}
+#faceplate > .hook ,
+#faceplate_inactive > .hook {
+  margin:2px 0 !important;
+}
+
+
+#faceplate-inactive-splash {
+  min-height:44px;
+}
+
+#faceplate-album-art {
+  min-width:40px;
+  min-height:40px;
+  max-width:40px;
+  max-height:40px;
+}
+
+#faceplate_content {
+  min-height:44px;
+  padding:4px 2px;
+}
+
+
+
+
+
+
+
+
+
+.tab-icon-image {
+  max-width: 16px;
+  max-height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  margin-right:2px;
+}
+
+
+tab[first-tab="true"],
+.tabs-container > hbox > tab {
+  margin-left:0px !important;
+}
+
+
+
+
+
+
+.close-button {
+  background-image:none;
+  margin:5px !important;
+}
+.close-button > .button-box {
+  padding:0;
+}
+
+
+
+
+.service-pane-spring-load-button {
+}
+.service-pane-spring-load-button > .button-box {
+  padding:0;
+}
+.service-pane-spring-load-button> .button-box > .button-text {
+  display:none;
+}
+
+
+
+
+
+
+notification,
+.dialog-notification {
+  padding: 2px 8px;
+}
+
+
+/** PLAYER CONTENT WRAPPER **/
+#content_player_wrapper[playercontrols='top'] {
+  -moz-box-direction: reverse;
+}
+#content_player_wrapper[playercontrols='top'] #control_pane_box,
+#content_player_wrapper[playercontrols='top'] #control_pane_box > .hook > .left,
+#content_player_wrapper[playercontrols='top'] #control_pane_box > .hook > .right,
+#content_player_wrapper[playercontrols='top'] #control_pane_box > .hook > .middle {
+  min-height: 53px;
+  max-height: 53px;
+}
+#content_player_wrapper[playercontrols='top'] #servicepane-status-bar-box,
+#content_player_wrapper[playercontrols='top'] #status-bar-box {
+  border-bottom:none !important;
+  max-height:19px;
+}
+
+
+
+.servicepane-toolbar-newitem-button {
+  max-width:16px;
+  max-height:16px;
+  margin:0px;
+}
+.servicepane-toolbar-newitem-button > .clickhold-button {
+  border:none;
+  padding:0px;
+  margin:0px;
+}
+.servicepane-toolbar-newitem-button > .clickhold-button > .button-box {
+  padding:0px;
+}
+.servicepane-toolbar-newitem-button > .clickhold-button > .button-box > .button-text {
+  display:none;
+}
+.servicepane-toolbar-newitem-button > .clickhold-button > .button-box > .button-icon {
+  min-height:14px;
+  min-width:14px;
+}
+.clickhold-button {
+  background-image:none;
+  background-color:transparent;
+}
+
+
+
+
+/* rm progress meter in the status bar because it is not hooked up */
+#statusbar-progresspanel {
+  display:none;
+}
+
+
+
+
+
+
+textbox[type="number"],
+datepicker,
+timepicker {
+  padding:0;
+}
+textbox[type="number"] > .textbox-input-box,
+.datetimepicker-input-subbox,
+.datetimepicker-year {
+  padding:2px 3px 2px 2px;
+}
+textbox[type="number"] > spinbuttons > .spinbuttons-box > button,
+datepicker > spinbuttons > .spinbuttons-box > button,
+timepicker > spinbuttons > .spinbuttons-box > button {
+  margin:0;
+  border:none !important;
+}
+textbox[type="number"] > spinbuttons > .spinbuttons-box > button > .button-box,
+datepicker > spinbuttons > .spinbuttons-box > button > .button-box,
+timepicker > spinbuttons > .spinbuttons-box > button > .button-box {
+  padding:0px;
+}
+
+/* REVISIT:
+   rm background color for tab panels in the advanced pane so that the bottom border of the tabs will show */
+#advancedPrefs > tabpanels {
+  background-color:transparent !important;
+}
+#advancedPrefs {
+  margin-right:0 !important;
+  margin-left:0 !important;
+}
+
+
+
+.smart-condition-minus > .button-box,
+.smart-condition-plus > .button-box {
+  padding:0;
+}
+.smart-condition-minus > .button-box > .button-text,
+.smart-condition-plus > .button-box > .button-text {
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#extensionsManager:not([active="true"]) > #topStackBar > #viewGroup {
+  background-image: none;
+}
+
+#extensionsManager:not([active="true"]) > #topStackBar > #viewGroup > .radiogroupWrapper {
+  opacity: 0.7;
+}
+
+#extensionsBox {
+  margin: 0px;
+}
+
+#resizerBox {
+/*  margin-top: -12px;
+  visibility: hidden;
+  border:2px solid red !important;*/
+}
+
+#resizerBox > resizer {
+  height: 10px;
+  max-height: 10px;
+  visibility: visible;
+}
+
+/* Command Bar */
+#commandBarBottom {
+  margin: 0px;
+}
+
+#commandBarBottom > button {
+  list-style-image: none !important;
+}
+
+#commandBarBottom button .button-icon {
+}
+
+
+
+/* List Items */
+
+
+richlistitem {
+  padding:4px;
+  min-height: 24px;
+}
+
+richlistitem[selected="true"]:not([opType]) .descriptionCrop {
+  display: none;
+}
+
+.addonName {
+  font-weight: bold;
+}
 /*
-  Focused state
+.previewText {
+  font-size: 10px;
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+}
 */
-textbox[focused="true"]:not(.plain),
-searchbar[focused="true"] .search-go-button,
-searchbar[focused="true"] .searchbar-textbox {
-  background-color: rgb(255,235,255) !important;
+
+.addonIcon {
+  width: 32px;
+  max-width: 32px;
+  height: 32px;
+  max-height: 32px;
+}
+/*
+.updateBadge,
+.notifyBadge {
+  width: 16px;
+  height: 16px;
+  list-style-image: url("chrome://mozapps/skin/extensions/notifyBadges.png");
 }
 
-/* location bar overlay */
+.updateBadge {
+  -moz-margin-end: -2px;
+  -moz-image-region: rect(0px 16px 16px 0px);
+}
 
-.locationbar-textbox, .searchbar-textbox, #searchbar .search-go-button {
-  border:0px solid; 
-  border:1px solid white; 
-  border-color:  rgb(255,210,250) ; 
+.notifyBadge {
+  -moz-margin-start: -2px;
+  -moz-image-region: rect(0px 48px 16px 32px);
+}
+
+.updateBadge,
+.updateAvailableBox,
+.notifyBadge {
+  display: none;
+}
+*/
+
+.updateBadge,
+.updateAvailableBox,
+.notifyBadge {
+  display: none;
+}
+
+/* Selected Add-on buttons
+   See content/extensions.css to hide / display buttons */
+.selectedButtons {
+}
+
+.selectedButtons > button {
+}
+
+.enableButton,
+.disableButton,
+.optionsButton,
+.useThemeButton {
+}
+
+.enableButton, .disableButton,
+.uninstallButton, .cancelUninstallButton {
+}
+
+/* Selected Add-on status messages and images */
+
+.selectedStatusMsgs > hbox {
+}
+
+.selectedStatusMsgs label {
+  font-weight: bold;
+}
+
+.selectedStatusMsgs label.text-link {
+  font-weight: normal;
+  border: none;
+}
+
+richlistitem[opType="needs-uninstall"] .notifyBadge {
+  display: none;
+}
+
+#progressBox {
+  padding: 4px;
+}
+
+#progressBox > hbox {
+  -moz-box-align: center;
+}
+
+/* View buttons */
+.viewSelector {
+  margin: 0px;
+}
+#viewGroup radio {
+  -moz-appearance: none;
+  margin: 0px;
+  padding: 0px;
+  list-style-image: none;
 }
 
 
-menupopup, menu, menuitem { 
-	background-color:transparent;
+#viewGroup radio[selected="true"] {
+
+}
+
+.viewButtonIcon {
+  display:none;
+}
+
+
+/* Update view checkbox */
+.includeUpdate {
+  -moz-user-focus: none;
+}
+
+richlistitem[selected="true"] .includeUpdate {
+  -moz-user-focus: normal;
+}
+
+#infoDisplay {
+  overflow-y: auto;
+}
+
+#infoDisplay body {
+  padding: 5px;
+}
+
+#infoDisplay h1,
+#infoDisplay h2,
+#infoDisplay h3 {
+  text-align: left;
+  font-weight: bold;
+  margin: 0 0 0.7em 0;
+}
+
+#infoDisplay h1 {
+  font-size: 150%;
+}
+
+#infoDisplay h2 {
+  font-size: 125%;
+}
+
+#infoDisplay h3 {
+  font-size: 100%;
+}
+
+#infoDisplay ol,
+#infoDisplay ul {
+  margin: 0 0 0.7em 0;
+}
+
+#infoDisplay li {
+  text-align: left;
+}
+
+#infoDisplay p {
+  text-align: justify;
+  margin: 0 0 0.7em 0;
+}
+
+
+
+/** about config **/
+#filterRow {
+  min-height:29px;
+  margin:0px !important;
+  
+  background-image:url('chrome://songbird/skin/base-elements/bg-generic-bar.png');
+  background-repeat:repeat-x;
+  background-position:left top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#addonsMsg+vbox {
+  padding:0 8px;
+}
+#viewGroup {
+  -moz-box-pack:center;
+  padding:6px 6px 0px 6px;
+}
+#extensionsView {
+  margin:0px;
+  /* HIDDEN */
+  border:none !important;
+}
+#viewGroup > radio {
+  padding:2px 8px;
+  margin:0 0 -1px 0;
+}
+#viewGroup > radio+radio {
+  margin-left:1px !important;
+}
+
+
+#viewGroup > radio > .viewButtonLabel {
+  padding:0px;
+  margin:0px 4px !important;
+}
+
+.selectedButtons > button {
+}
+.selectedButtons > button > .button-box > .button-text {
+  font-size:9px;
+  padding:0;
+  margin:0;
+}
+richlistitem:first-child,
+template+richlistitem {
+  border-top:none !important;
+}
+.prefWindow-dlgbuttons {
+  margin:0px !important;
 } 
 
-
-
-
-/******************************************************************************
-> FACEPLATE
-
-  Appears when dragging media items - it's a combination of an image and a badge with a count
-******************************************************************************/
-.faceplate-text {
-  color: rgb(20,0,30);
+.insecureUpdateBox {
 }
-#sb-player-artist-label-label,
-#sb-player-album-label-label {
-  color: rgb(170,100,190);
-}
-#sb-player-timeelapsed-label > label,
-#sb-player-totaltime-label > label {
-  color: rgb(170,100,190);
+richlistitem[providesUpdatesSecurely="true"] {
 }
 
+.addonThrobber,
+richlistitem[loading="true"] .updateBadge {
+  display: -moz-box;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+
+
+
+
+/* pref */
+#defaultFontSize {
+  min-width:5em;
+}
+#showUpdateInfoButton {
+  visibility:collapse;
+}
+
+
+
+
+
+.wizard-buttons-separator,
+.wizard-header-description[value=""] {
+  display:none !important;
+}
+.wizard-buttons-box-2 {
+  margin:0px;
+}
+
+
+
+.message-icon,
+.alert-icon,
+.error-icon,
+.question-icon {
+  width: 0px;
+  height: 0px;
+  list-style-image: none;
+  margin: 0px !important;
+
+}
+
+.tabs-alltabs-button > dropmarker {
+  width:7px !important;
+  padding-right:2px;
+}
+
+
+
+
+
+
+#sb-playlist-filters {
+  min-height:60px;
+}
+
+
+
+treecol {
+  min-width: 45px;
+}
+
+treecol[bind="http://songbirdnest.com/data/1.0#rating"] {
+  min-width: 78px;
+  width: 78px;
+}
+treecol[bind="http://songbirdnest.com/data/1.0#originPageImage"] {
+  min-width: 20px;
+  width: 20px;
+}
+treecol[bind="http://songbirdnest.com/data/1.0#ordinal"] {
+  min-width: 42px;
+  width: 42px;
+}
+treecol[bind="http://songbirdnest.com/data/1.0#downloadButton"] {
+  min-width: 86px;
+  width: 86px;
+}
+
+
+radiogroup {
+  padding:4px;
+}
+.groupbox-body {
+  padding: 8px !important;
+  margin: 0;
+}
+.groupbox-title {
+  padding:0 !important;
+  margin:0 !important;
+}
+groupbox caption {
+  padding:0 !important;
+  margin:0 !important;
+  -moz-box-flex:1 !important;
+}
+.caption-text {
+  font-size:9px !important;
+}
+
+
+separator {
+  padding:4px 0;
+}
+
+
+
+
+toolbarbutton:active > .toolbarbutton-icon,
+toolbarbutton:active > .toolbarbutton-menu-dropmarker,
+toolbarbutton:active > .toolbarbutton-menulist-dropmarker,
+toolbarbutton:active > .toolbarbutton-menubutton-dropmarker,
+toolbarbutton[open="true"] > .toolbarbutton-icon,
+toolbarbutton[open="true"] > .toolbarbutton-menu-dropmarker,
+toolbarbutton[open="true"] > .toolbarbutton-menulist-dropmarker,
+toolbarbutton[open="true"] > .toolbarbutton-menubutton-dropmarker {
+  opacity:0.5;
+}
+
+
+
+
+
+#nav-bar toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-button {
+  border:none;
+}
+
+findbar {
+  border:none;
+}
+
+#viewGroup {
+  border:none !important;
+  -moz-border-radius:0px !important;
+}
+
+
+.locationbar-textbox {
+  border-right:none !important;
+}
+.searchbar-textbox {
+  border-right:none !important;
+  border-left:none !important;
+}
+.searchbar-engine-button:active > .searchbar-engine-button-stack > .searchbar-engine-image-container > image,
+.searchbar-engine-button[open="true"] > .searchbar-engine-button-stack > .searchbar-engine-image-container > image {
+  opacity:0.5;
+}
+
+.tabbrowser-tab {
+  padding: 0px 7px 0px 0px !important;
+
+}
+
+.tabbrowser-tab > .tab-image-middle,
+.tabbrowser-tab > .tab-image-left,
+.tabbrowser-tab > .tab-image-right,
+.tabbrowser-tab > .tab-close-button {
+  min-height: 26px !important;
+}
+
+
+#faceplate > .hook > .left,
+#faceplate > .hook > .middle,
+#faceplate > .hook > .right,
+#faceplate_inactive > .hook > .left,
+#faceplate_inactive > .hook > .middle,
+#faceplate_inactive > .hook > .right {
+  min-width:15px;
+}
 
 
