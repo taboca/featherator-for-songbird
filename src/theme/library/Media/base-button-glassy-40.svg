@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../base.css"  type="text/css" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="40" height="40" viewBox=" 0 0 40 40"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<defs>
+   	<mask id="maskbottom">
+		<rect x="0" y="0" width="40" height="40" style="fill: url(#whitetoblack);" />
+	</mask>
+   	<mask id="masktop">
+		<rect x="0" y="0" width="40" height="40" style="fill: url(#blacktowhite);" />
+	</mask>
+ 	<mask id="maskround">
+        	<rect x="0" y="0" rx="0" ry="0"  width="100" height="24" style="fill: white" />
+		<rect x="5" y="35" rx="15" ry="15"  width="30" height="34" style="fill: black" />
+        </mask>
+
+	<mask id="maskouter">
+		<rect x="0" y="0" rx="0" ry="0" width="40" height="24" style="fill: black;"/>
+		<rect x="0" y="0" rx="5" ry="5" width="37" height="37" style="fill: white;"/>
+	</mask>
+
+	<filter id="blurbasic" filterRes="200">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+	</filter>
+
+	<filter id="blurshadow" filterRes="200">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+	</filter>
+
+	<linearGradient id="whitetoblack" x1="0%" y1="0%" x2="0%" y2="100%">
+		<stop offset="0%"   style="stop-color:black;opacity:1"  />
+		<stop offset="100%" style="stop-color:white;opacity:1" />
+	</linearGradient>
+
+	<linearGradient id="blacktowhite" x1="0%" y1="0%" x2="0%" y2="100%">
+		<stop offset="0%" style="stop-color:white;opacity:1" />
+		<stop offset="100%"   style="stop-color:black;opacity:1"  />
+	</linearGradient>
+
+</defs> 
+
+   <rect x="3" y="3" rx="5" ry="5" width="34" height="34" style="fill: black;" filter="url(#blurshadow)" />
+
+   <g mask="url(#maskouter)"> 
+	   <rect x="0" y="0" width="40" height="40" class="color-odd-normal" />
+	   <rect x="0" y="0" width="40" height="40" style="fill: white;" filter="url(#blurbasic)" mask="url(#maskbottom)"  />
+	   <g mask="url(#maskround)"> 
+		   <rect x="0" y="0" rx="5" ry="5" width="40" height="40" style="fill: white;" mask="url(#masktop)"  />
+	   </g>
+  </g>
+
+</svg>

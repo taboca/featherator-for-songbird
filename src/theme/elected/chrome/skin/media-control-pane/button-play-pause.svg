@@ -4,21 +4,21 @@
 
 <!-- play button --> 
 
-<image x="0" y="0"  width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy.svg"> </image>
+<image x="0" y="0"  width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-40.svg"> </image>
 <image x="0" y="0" width="40px" height="40px" xlink:href="../../../../library/Media/icon-play.svg"> </image>
 
 <g opacity=".8">
-<image x="0" y="40" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy.svg" > </image>
+<image x="0" y="40" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-40.svg" > </image>
 <image x="0" y="40" width="40px" height="40px" xlink:href="../../../../library/Media/icon-play.svg"> </image>
 
 </g>
 
-<image x="0" y="80" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-active.svg"> </image>
+<image x="0" y="80" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-40-active.svg"> </image>
 <image x="0" y="80" width="40px" height="40px" xlink:href="../../../../library/Media/icon-play.svg"> </image>
 
 <g opacity=".5">
 
-<image x="0" y="120" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy.svg"> </image>
+<image x="0" y="120" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-40.svg"> </image>
 <image x="0" y="120" width="40px" height="40px" xlink:href="../../../../library/Media/icon-play.svg"> </image>
 
 </g>
@@ -26,21 +26,21 @@
 
 <!-- pause button --> 
 
-<image x="40" y="0" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy.svg"> </image>
+<image x="40" y="0" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-40.svg"> </image>
 <image x="40" y="0" width="40px" height="40px" xlink:href="../../../../library/Media/icon-pause.svg"> </image>
 
 <g opacity=".8">
-<image x="40" y="40" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy.svg"> </image>
+<image x="40" y="40" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-40.svg"> </image>
 <image x="40" y="40" width="40px" height="40px" xlink:href="../../../../library/Media/icon-pause.svg"> </image>
 
 </g>
 
-<image x="40" y="80" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-active.svg"> </image>
+<image x="40" y="80" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-40-active.svg"> </image>
 <image x="40" y="80" width="40px" height="40px" xlink:href="../../../../library/Media/icon-pause.svg"> </image>
 
 <g opacity=".5">
 
-<image x="40" y="120" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy.svg"> </image>
+<image x="40" y="120" width="40px" height="40px" xlink:href="../../../../library/Media/base-button-glassy-40.svg"> </image>
 <image x="40" y="120" width="40px" height="40px" xlink:href="../../../../library/Media/icon-pause.svg"> </image>
 
 </g>
