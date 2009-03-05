@@ -9,16 +9,24 @@
 
 /* Elected */
 
-.stop-color-even-normal-light { 
+.stop-even-normal-normal-light { 
 	stop-color:rgb(255,240,255);
 	stop-opacity:1
 }
-.stop-color-even-normal { 
+.stop-even-normal-more { 
+	stop-color:rgb(250,200,250); 
+ 	stop-opacity:1; 
+} 
+.stop-even-normal { 
 	stop-color:rgb(250,190,240); 
  	stop-opacity:1; 
 } 
-.stop-color-even-normal-less { 
+.stop-even-normal-less { 
 	stop-color:rgb(240,180,230); 
+ 	stop-opacity:1; 
+} 
+.stop-even-normal-less-less { 
+	stop-color:rgb(230,170,220); 
  	stop-opacity:1; 
 } 
 
