@@ -442,24 +442,6 @@
        gradientTransform="translate(0,12.67366)" />
   </defs>
   <rect
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:18.40768814;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect2450"
-     width="61.299"
-     height="179.02361"
-     x="118.69839"
-     y="111.33061"
-     rx="15.053653"
-     ry="13.050958" />
-  <rect
-     ry="13.050958"
-     rx="15.053653"
-     y="111.33061"
-     x="221.93881"
-     height="179.02361"
-     width="61.299"
-     id="rect3222"
-     style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:18.40768814;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <rect
      ry="8.5030241"
      rx="9.8078299"
      y="142.52325"
@@ -467,9 +449,9 @@
      height="116.63834"
      width="39.937824"
      id="rect2453"
-     style="opacity:1;fill:#ff0066;fill-opacity:1;stroke:#000000;stroke-width:11.99306679;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:#000080;fill-opacity:1;stroke:none;stroke-width:11.99306679000000031;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <rect
-     style="opacity:1;fill:#ff0066;fill-opacity:1;stroke:#000000;stroke-width:11.99306679;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="opacity:1;fill:#000080;fill-opacity:1;stroke:none;stroke-width:11.99306679000000031;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect2455"
      width="39.937824"
      height="116.63834"
