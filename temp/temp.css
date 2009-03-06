@@ -70,15 +70,15 @@ are a few colors defined in this file that might be of interest:
 Often used by boxes that contain elements that update what is displayed in the 
 content pane. eg: service pane, find bar, top half of the device summary 
 page, command bar.
-> rgb(110,165,210);
+> rgb(220,185,210);
 
 The following is used by all/most borders in the content area. eg: borders for 
 filer pane splitters, border for treecols and list headers.
-> rgb(80,150,180);
+> rgb(190,170,180);
 
 The following is used by all/most borders in the chrome area. eg: splitter for 
 service pane, splitters for display panes, borders for windows/dialogs/wizards.
-> rgb(60,140,160)
+> rgb(170,160,160)
 
 This file contains most but not all colors used in the feather. The styles in 
 the following files need to be there for technical reasons.
@@ -116,14 +116,14 @@ dialog,
 window,
 prefwindow,
 panel {
-  background-color: rgb(140,180,240);
+  background-color: rgb(250,190,240);
 }
 page {
-  background-color: rgb(110,165,210);
+  background-color: rgb(220,185,210);
 }
 menupopup, 
 popup {
-  background-color:rgb(180,220,255);
+  background-color:rgb(255,220,255);
 }
 
 
@@ -134,15 +134,15 @@ groupbox,
 radiogroup,
 listbox,
 richlistbox {
-  background-color:rgb(180,220,255);
-  border:1px solid rgb(80,150,180);
+  background-color:rgb(255,220,255);
+  border:1px solid rgb(190,170,180);
 }
 groupbox,
 radiogroup {
   -moz-border-radius:3px;
 }
 groupbox caption {
-  border:1px solid rgb(80,150,180);  
+  border:1px solid rgb(190,170,180);  
   /* rounded corners to match that of the groupbox element */
   -moz-border-radius-topleft:3px;
   -moz-border-radius-topright:3px;
@@ -157,38 +157,38 @@ treechildren::-moz-tree-cell-text {
 
 listheader,
 treecols {
-  border-bottom:1px solid rgb(80,150,180);
+  border-bottom:1px solid rgb(190,170,180);
 }
 listheader,
 treecol {
-  border-right:1px solid rgb(80,150,180);
+  border-right:1px solid rgb(190,170,180);
 }
 listheader > label,
 treecol > label {
-  color: rgb(50,145,150);
+  color: rgb(160,155,150);
 }
 
 treecol[insertafter="true"],
 treechildren::-moz-tree-cell( insertafter ) {
-  border-right: 1px solid rgb(60,140,160); !important;
+  border-right: 1px solid rgb(170,160,160); !important;
 }
 treecol[insertbefore="true"],
 treechildren::-moz-tree-cell( insertbefore ) {
-  border-left: 1px solid rgb(60,140,160); !important;
+  border-left: 1px solid rgb(170,160,160); !important;
 }
 richlistitem {
-  border-bottom: 1px solid rgb(60,140,160);
+  border-bottom: 1px solid rgb(170,160,160);
 }
 
 menu,
 menuitem,
 listitem {
-  background-color: rgb(180,220,255);
+  background-color: rgb(255,220,255);
 }
 
 /* treecolAutoCompleteComment is document.title in the case of the location bar */
 .autocomplete-treebody::-moz-tree-cell-text( treecolAutoCompleteComment ) {
-  color: rgb(60,140,160);
+  color: rgb(170,160,160);
 }
 
 /* progress meters in trees do not support background-images or list-style-images
@@ -199,27 +199,27 @@ treechildren::-moz-tree-progressmeter {
 }
 
 treechildren::-moz-tree-separator {
-  border-top: 1px dotted rgb(80,150,180);
+  border-top: 1px dotted rgb(190,170,180);
 }
 
 toolbar,
 menubar,
 .generic-bar {
-  background-color: rgb(110,165,210);
+  background-color: rgb(220,185,210);
 }
 toolbar,
 menubar,
 .generic-bar {
-  border-bottom:1px solid rgb(60,140,160);
+  border-bottom:1px solid rgb(170,160,160);
 }
 toolbarseparator {
-  background-color:rgb(60,140,160);
+  background-color:rgb(170,160,160);
 }
 
 /* shortcut keys displayed in menus */
 .menu-accel,
 .menu-iconic-accel {
-  color:rgb(60,140,160);
+  color:rgb(170,160,160);
 }
 
 tooltip {  
@@ -227,7 +227,7 @@ tooltip {
 }
 progressmeter,
 sb-status-progressmeter {
-  border:1px solid rgb(60,140,160);
+  border:1px solid rgb(170,160,160);
 }
 
 .dialog-button-box,
@@ -235,8 +235,8 @@ sb-status-progressmeter {
 .device-tab-button-box,
 .paneDeckContainer+hbox,
 #addonsMsg+vbox {
-  background-color:rgb(110,165,210);
-  border-top:1px solid rgb(60,140,160);
+  background-color:rgb(220,185,210);
+  border-top:1px solid rgb(170,160,160);
 }
 
 
@@ -251,12 +251,12 @@ textbox,
 .datetimepicker-year,
 sb-rating,
 .menulist-editable-box {
-  background-color:rgb(180,220,255);
+  background-color:rgb(255,220,255);
 
-  border-top:1px solid rgb(180,220,255);
-  border-right:1px solid rgb(70,145,170);
-  border-bottom:1px solid rgb(90,155,190);
-  border-left:1px solid rgb(70,145,170);
+  border-top:1px solid rgb(255,220,255);
+  border-right:1px solid rgb(180,165,170);
+  border-bottom:1px solid rgb(200,175,190);
+  border-left:1px solid rgb(180,165,170);
 }
 
 /*
@@ -290,7 +290,7 @@ textbox[focused="true"][invalid="true"] {
 } 
 textbox[empty="true"],
 searchbar[empty="true"] > hbox > hbox > .searchbar-textbox {
-  color:rgb(60,140,160);
+  color:rgb(170,160,160);
 }
 
 
@@ -305,7 +305,7 @@ button,
 toolbarbutton,
 menulist {
   -moz-border-radius:3px;
-  border:1px solid rgb(180,220,255);
+  border:1px solid rgb(255,220,255);
 }
 
 button:focus,
@@ -339,23 +339,23 @@ button.button-menubutton-button:focus {
   Base
 **/
 tabbox {
-  background-color:rgb(140,180,240);
+  background-color:rgb(250,190,240);
 }
 tabpanels {
-  background-color:rgb(180,220,255);
+  background-color:rgb(255,220,255);
 }
 tabs {
-  background-color: rgb(110,165,210);
+  background-color: rgb(220,185,210);
 }
 tab {
-  border:1px solid rgb(60,140,160);
+  border:1px solid rgb(170,160,160);
 }
 
 /**
   Top
 **/
 tabs[orient="horizontal"] {
-  border-bottom:1px solid rgb(60,140,160);
+  border-bottom:1px solid rgb(170,160,160);
 }
 tabs[orient="horizontal"] tab {
   -moz-border-radius:0px;
@@ -363,15 +363,15 @@ tabs[orient="horizontal"] tab {
   -moz-border-radius-topright:3px;
 }
 tabs[orient="horizontal"] tab[selected="true"] {
-  border:1px solid rgb(60,140,160);
-  border-bottom:1px solid rgb(90,155,190);
+  border:1px solid rgb(170,160,160);
+  border-bottom:1px solid rgb(200,175,190);
 }
 
 /**
   Bottom
 **/
 tabs[orient="horizontal"].tabs-bottom {
-  border-top:1px solid rgb(60,140,160);
+  border-top:1px solid rgb(170,160,160);
 }
 tabs[orient="horizontal"].tabs-bottom tab {
   -moz-border-radius:0px;
@@ -379,15 +379,15 @@ tabs[orient="horizontal"].tabs-bottom tab {
   -moz-border-radius-bottomright:3px;
 }
 tabs[orient="horizontal"].tabs-bottom tab[selected="true"] {
-  border:1px solid rgb(60,140,160);
-  border-top:1px solid rgb(90,155,190);
+  border:1px solid rgb(170,160,160);
+  border-top:1px solid rgb(200,175,190);
 }
 
 /**
   Right
 **/
 tabs[orient="vertical"] {
-  border-left:1px solid rgb(60,140,160);
+  border-left:1px solid rgb(170,160,160);
 }
 tabs[orient="vertical"] tab {
   -moz-border-radius:0px;
@@ -395,15 +395,15 @@ tabs[orient="vertical"] tab {
   -moz-border-radius-bottomright:3px;
 }
 tabs[orient="vertical"] tab[selected="true"] {
-  border:1px solid rgb(60,140,160);
-  border-left:1px solid rgb(90,155,190);
+  border:1px solid rgb(170,160,160);
+  border-left:1px solid rgb(200,175,190);
 }
 
 /**
   Left
 **/
 tabs[orient="vertical"].tabs-left {
-  border-right:1px solid rgb(60,140,160);
+  border-right:1px solid rgb(170,160,160);
 }
 tabs[orient="vertical"].tabs-left tab {
   -moz-border-radius:0px;
@@ -411,8 +411,8 @@ tabs[orient="vertical"].tabs-left tab {
   -moz-border-radius-bottomleft:3px;
 }
 tabs[orient="vertical"].tabs-left tab[selected="true"] {
-  border:1px solid rgb(60,140,160);
-  border-right:1px solid rgb(90,155,190);
+  border:1px solid rgb(170,160,160);
+  border-right:1px solid rgb(200,175,190);
 }
 
 
@@ -424,7 +424,7 @@ tabs[orient="vertical"].tabs-left tab[selected="true"] {
 ******************************************************************************/
 notification,
 .dialog-notification {
-  border-bottom:1px solid rgb(60,140,160);
+  border-bottom:1px solid rgb(170,160,160);
 }
 notification[type="info"],
 .dialog-notification.notification-info {
@@ -450,18 +450,18 @@ notification[type="critical"],
   One for the browser and another for the service pane
 ******************************************************************************/
 statusbar {
-  border-top:1px solid rgb(60,140,160);
+  border-top:1px solid rgb(170,160,160);
 }
 #servicepane-status-bar-box,
 #status-bar-box {
-  border-top:1px solid rgb(60,140,160);
-  border-bottom:1px solid rgb(60,140,160);
+  border-top:1px solid rgb(170,160,160);
+  border-bottom:1px solid rgb(170,160,160);
 }
 .service-pane-spring-load-button,
 .servicepane-toolbar-newitem-button,
 sb-displaypane-button > button {
-  border-right: 1px solid rgb(80,150,180);
-  border-left: 1px solid rgb(80,150,180);
+  border-right: 1px solid rgb(190,170,180);
+  border-left: 1px solid rgb(190,170,180);
 }
 
 
@@ -476,11 +476,11 @@ sb-displaypane-button > button {
 listitem[selected="true"],
 richlistitem[selected="true"],
 treechildren::-moz-tree-row( selected, even ) {
-  background-color: rgb(120,170,220);
+  background-color: rgb(230,190,220);
 }
 /* alternating rows for trees */
 treechildren::-moz-tree-row( selected, odd ) {
-  background-color: rgb(110,165,210);
+  background-color: rgb(220,185,210);
 }
 
 /**
@@ -492,12 +492,12 @@ menu[_moz-menuactive="true"],
 menuitem[_moz-menuactive="true"],
 treechildren.autocomplete-treebody::-moz-tree-row( selected even ),
 treechildren::-moz-tree-row( selected focus even ) {
-  background-color: rgb(120,170,220);
+  background-color: rgb(230,190,220);
 }
 /* alternating rows for trees */
 treechildren.autocomplete-treebody::-moz-tree-row( selected odd ),
 treechildren::-moz-tree-row( selected focus odd ) {
-  background-color: rgb(100,160,200);
+  background-color: rgb(210,180,200);
 }
 
 /**
@@ -546,11 +546,11 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
   font-weight:bold;
 }
 #titlebar_box {
-  border-bottom:1px solid rgb(60,140,160);
+  border-bottom:1px solid rgb(170,160,160);
 }
 /* used for Linux and Windows only - this is the file menu displayed in the title bar*/
 #main-menubar > menu[_moz-menuactive="true"][open="true"] {
-  background-color:rgb(180,220,255);
+  background-color:rgb(255,220,255);
 }
 
 
@@ -559,7 +559,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 > SERVICE PANE
 ******************************************************************************/
 #servicepane {
-  background-color: rgb(110,165,210);
+  background-color: rgb(220,185,210);
 }
 .servicepane-tree > treechildren::-moz-tree-cell-text(selected) {
   font-weight:bold;
@@ -568,7 +568,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 .servicepane-tree > treechildren::-moz-tree-cell-text( servicesource-bookmarks ),
 .servicepane-tree > treechildren::-moz-tree-cell-text( servicesource-playlists ),
 .servicepane-tree > treechildren::-moz-tree-cell-text( folder ) {
-  color:rgb(50,145,150) !important;
+  color:rgb(160,155,150) !important;
   font-weight:normal !important;
 }
 
@@ -590,16 +590,16 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 }
 
 .servicepane-tree > treechildren::-moz-tree-row( dropBefore ) {
-  border-top:1px solid rgb(60,140,160); !important;
+  border-top:1px solid rgb(170,160,160); !important;
 }
 .servicepane-tree > treechildren::-moz-tree-row( dropAfter ) {
-  border-bottom:1px solid rgb(60,140,160); !important;
+  border-bottom:1px solid rgb(170,160,160); !important;
 }
 
 /* this is th style used when items are dragged over applicable rows */
 .servicepane-tree > treechildren::-moz-tree-row( dropOn ) {
-  background-color:rgb(90,155,190);
-  border:2px solid rgb(60,140,160); !important;
+  background-color:rgb(200,175,190);
+  border:2px solid rgb(170,160,160); !important;
   -moz-border-radius:6px;
 }
 
@@ -611,7 +611,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
   Appears when dragging media items - it's a combination of an image and a badge with a count
 ******************************************************************************/
 .sb-playlist-drag-badge:not([value="1"]) {
-  color:rgb(180,220,255);
+  color:rgb(255,220,255);
   font-weight: bold;
   background-color: rgb(0,0,0);
   -moz-border-radius: 4px;
@@ -625,18 +625,18 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
   Appears when dragging media items - it's a combination of an image and a badge with a count
 ******************************************************************************/
 .faceplate-text {
-  color:rgb(160,200,250);
+  color:rgb(255,200,250);
 }
 #sb-player-title-label-label {
   font-weight:bold;
 }
 #sb-player-artist-label-label,
 #sb-player-album-label-label {
-  color:rgb(100,160,200);
+  color:rgb(210,180,200);
 }
 #sb-player-timeelapsed-label > label,
 #sb-player-totaltime-label > label {
-  color:rgb(70,145,170);
+  color:rgb(180,165,170);
   font-size:9px !important;
 }
 
@@ -648,8 +648,8 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
   A bar used to hold buttons for media lists - eg: downloads, smart playlists
 ******************************************************************************/
 .sb-commands-toolbar {
-  background-color: rgb(110,165,210);
-  border-top:1px solid rgb(60,140,160);
+  background-color: rgb(220,185,210);
+  border-top:1px solid rgb(170,160,160);
 }
 
 
@@ -659,15 +659,15 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 ******************************************************************************/
 
 #nav-bar toolbarbutton {  
-  background-color:rgb(180,220,255);
-  border:2px solid rgb(140,180,240);
+  background-color:rgb(255,220,255);
+  border:2px solid rgb(250,190,240);
   -moz-border-radius:2px;
 }
 #nav-bar toolbarbutton button {
   -moz-border-radius:2px;
 }
 #nav-bar toolbarbutton[type="menu-button"] > .toolbarbutton-menubutton-button {
-  border-right:1px solid rgb(140,180,240);
+  border-right:1px solid rgb(250,190,240);
 }
 
 
@@ -679,18 +679,18 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 #searchbar .search-go-button {
   background-color:rgb(230,230,230);
 
-  border-top:3px solid rgb(140,180,240);
-  border-right:1px solid rgb(140,180,240);
-  border-bottom:1px solid rgb(70,145,170);
-  border-left:1px solid rgb(140,180,240);
+  border-top:3px solid rgb(250,190,240);
+  border-right:1px solid rgb(250,190,240);
+  border-bottom:1px solid rgb(180,165,170);
+  border-left:1px solid rgb(250,190,240);
 }
 .searchbar-engine-button {  
-  background-color:rgb(180,220,255);
+  background-color:rgb(255,220,255);
     
   -moz-border-radius:0 !important;
   -moz-border-radius-topleft:2px !important;
   -moz-border-radius-bottomleft:2px !important;
-  border:1px solid rgb(140,180,240);
+  border:1px solid rgb(250,190,240);
 }
 /* highlight the menu item when it's available */
 .addengine-item {
@@ -703,18 +703,18 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 > DISPLAY PANES
 ******************************************************************************/
 .sb-displaypane-header {
-  border-bottom:1px solid rgb(60,140,160);
+  border-bottom:1px solid rgb(170,160,160);
 }
 
 .empty-message {
   -moz-border-radius:8px;
-  background-color:rgb(130,175,230);
-  border:1px solid rgb(90,155,190);
-  color:rgb(180,220,255);
+  background-color:rgb(240,195,230);
+  border:1px solid rgb(200,175,190);
+  color:rgb(255,220,255);
 }
 
 .drop-message {
-  color:rgb(180,220,255);
+  color:rgb(255,220,255);
 }
 
 /******************************************************************************
@@ -723,31 +723,31 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 #servicepane_splitter,
 #filter_splitter,
 #displaypane_right_sidebar_splitter {
-  background-color:rgb(110,165,210);
-  border-right:1px solid rgb(60,140,160);
-  border-left:1px solid rgb(60,140,160);
+  background-color:rgb(220,185,210);
+  border-right:1px solid rgb(170,160,160);
+  border-left:1px solid rgb(170,160,160);
 }
 #servicepane_splitter {
-  border-bottom:1px solid rgb(60,140,160);
+  border-bottom:1px solid rgb(170,160,160);
 }
 #filter_splitter {
-  border-right:1px solid rgb(80,150,180);
-  border-left:1px solid rgb(80,150,180);  
+  border-right:1px solid rgb(190,170,180);
+  border-left:1px solid rgb(190,170,180);  
 }
 
 #displaypane_contentpane_bottom_splitter,
 #displaypane_servicepane_bottom_splitter,
 .playlist-splitter,
 .playlist-web-splitter {
-  border-bottom:1px solid rgb(60,140,160);
-  border-top:1px solid rgb(60,140,160);
+  border-bottom:1px solid rgb(170,160,160);
+  border-top:1px solid rgb(170,160,160);
 }
 .playlist-splitter {
-  border-top:1px solid rgb(80,150,180);
-  border-bottom:1px solid rgb(80,150,180);  
+  border-top:1px solid rgb(190,170,180);
+  border-bottom:1px solid rgb(190,170,180);  
 }
 .playlist-web-splitter {
-  border-bottom:1px solid rgb(80,150,180);  
+  border-bottom:1px solid rgb(190,170,180);  
 }
 
 
@@ -760,11 +760,11 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 /* the top half of the summary page + background for tabs (ipod only) */
 #overall_device_info_box,
 #device_management_tabs {
-  background-color: rgb(110,165,210);
+  background-color: rgb(220,185,210);
 }
 /* label for the legend that shows total file size */
 .capacity_value_label {
-  color:rgb(60,140,160);
+  color:rgb(170,160,160);
 }
 .device-capacity-music,
 .device-capacity-legend-color-box[type="music"] {
@@ -780,7 +780,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 }
 .device-capacity-free,
 .device-capacity-legend-color-box[type="free"] {
-  background-color: rgb(130,175,230);
+  background-color: rgb(240,195,230);
 }
 /* the device capacity bar has 9 notches (10 sections)
    note: rgba(0~255, 0~255, 0~255, 0.0~1.0) */
@@ -790,7 +790,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 /* box that holds all the buttons for sync settings */
 .device-tab-button-box {
   -moz-border-radius:3px;
-  border:1px solid rgb(60,140,160);
+  border:1px solid rgb(170,160,160);
 }
 
 
@@ -800,8 +800,8 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 ******************************************************************************/
 
 .wizard-header {
-  background-color: rgb(110,165,210);
-  border-bottom:1px solid rgb(60,140,160);
+  background-color: rgb(220,185,210);
+  border-bottom:1px solid rgb(170,160,160);
 }
 
 .sb-wizard-header {
@@ -815,7 +815,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 > FIRST RUN WIZARD
 ******************************************************************************/
 .sb-first-run-eula-browser {
-  border:1px solid rgb(60,140,160);
+  border:1px solid rgb(170,160,160);
 }
 
 
@@ -826,15 +826,15 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 /* the track editor has tabs and tabpanels but are hidden for the time being
    this rule makes the tabpanels have the same background color as a dialog window */
 #track_editor tabpanels {
-  background-color: rgb(140,180,240);
+  background-color: rgb(250,190,240);
 }
 .art {
-  background-color:rgb(180,220,255);
-  border:1px solid rgb(70,145,170);
+  background-color:rgb(255,220,255);
+  border:1px solid rgb(180,165,170);
 }
 .art:focus {
   background-color:rgb(255,255,235);
-  border:2px solid rgb(70,145,170);
+  border:2px solid rgb(180,165,170);
 }
 
 
@@ -846,8 +846,8 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 ******************************************************************************/
 /* the box that contains n number of rules */
 .drawer-box {
-  background-color:rgb(140,180,240);
-  border:1px solid rgb(60,140,160);
+  background-color:rgb(250,190,240);
+  border:1px solid rgb(170,160,160);
   -moz-border-radius:3px;
 }
 
@@ -857,7 +857,7 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 > ABOUT DIALOG
 ******************************************************************************/
 #about_browser {
-  border-top:1px solid rgb(60,140,160);
+  border-top:1px solid rgb(170,160,160);
 }
 
 
@@ -866,12 +866,12 @@ toolbarbutton[disabled="true"] > .toolbarbutton-menulist-dropmarker {
 > FIND BAR
 ******************************************************************************/
 findbar {
-  background-color:rgb(110,165,210);
-  border-bottom:1px solid rgb(60,140,160);
+  background-color:rgb(220,185,210);
+  border-bottom:1px solid rgb(170,160,160);
 }
 /* text that shows the status of the search - eg: "Phrase now found" */
 findbar > .findbar-container > .findbar-find-status {
-  color:rgb(60,140,160);
+  color:rgb(170,160,160);
 }
 
 
@@ -883,7 +883,7 @@ findbar > .findbar-container > .findbar-find-status {
 ******************************************************************************/
 scrollbarbutton,
 scrollbar > slider > thumb {   
-  border:1px solid rgb(80,150,180);
+  border:1px solid rgb(190,170,180);
   -moz-border-radius:2px;
 }
 
@@ -896,18 +896,18 @@ scrollbar > slider > thumb {
   Make sure to update skin/window/bg-resizer-bottom-corner.png to match changes made here
 ******************************************************************************/
 .sb-sys-outer-frame-resizer {
-  background-color:rgb(80,150,180);
+  background-color:rgb(190,170,180);
 }
 .sb-sys-outer-frame-resizer[dir="top"],
 .sb-sys-outer-frame-resizer[dir="bottom"],
 .sb-sys-outer-frame-resizer-topleft,
 .sb-sys-outer-frame-resizer-topright {
-  border-top:1px solid rgb(60,140,160);
+  border-top:1px solid rgb(170,160,160);
 }
 .sb-sys-outer-frame-resizer-bottomleft,
 .sb-sys-outer-frame-resizer-bottomright,
 .sb-sys-outer-frame-resizer[dir="bottom"] {
-  border-bottom:1px solid rgb(60,140,160);
+  border-bottom:1px solid rgb(170,160,160);
 }
 .sb-sys-outer-frame-resizer[dir="left"],
 .sb-sys-outer-frame-resizer[dir="right"],
@@ -917,7 +917,7 @@ scrollbar > slider > thumb {
 .sb-sys-outer-frame-resizer-lefttop,
 .sb-sys-outer-frame-resizer-topright,
 .sb-sys-outer-frame-resizer-bottomright {
-  border-right:1px solid rgb(60,140,160);
+  border-right:1px solid rgb(170,160,160);
 }
 .sb-sys-outer-frame-resizer[dir="left"],
 .sb-sys-outer-frame-resizer[dir="right"],
@@ -927,7 +927,7 @@ scrollbar > slider > thumb {
 .sb-sys-outer-frame-resizer-lefttop,
 .sb-sys-outer-frame-resizer-topleft,
 .sb-sys-outer-frame-resizer-bottomleft {
-  border-left:1px solid rgb(60,140,160);
+  border-left:1px solid rgb(170,160,160);
 }
 
 
@@ -936,11 +936,11 @@ scrollbar > slider > thumb {
 > FILE DOWNLOAD MANAGER (MOZAPP)
 ******************************************************************************/
 #downloadManager > #downloadView {
-  background-color:rgb(180,220,255);
+  background-color:rgb(255,220,255);
 }
 #downloadManager > #search {
-  background-color: rgb(110,165,210);
-  border-top:1px solid rgb(60,140,160);
+  background-color: rgb(220,185,210);
+  border-top:1px solid rgb(170,160,160);
 }
 
 
@@ -949,8 +949,8 @@ scrollbar > slider > thumb {
 > ABOUT CONFIG (MOZAPP)
 ******************************************************************************/
 #filterRow {
-  background-color: rgb(110,165,210);
-  border-bottom:1px solid rgb(60,140,160);
+  background-color: rgb(220,185,210);
+  border-bottom:1px solid rgb(170,160,160);
 }
 
 
@@ -960,34 +960,34 @@ scrollbar > slider > thumb {
 ******************************************************************************/
 /* this dude is really a radiogroup... */
 .paneSelector {
-  background-color: rgb(110,165,210) !important;
-  border-right:1px solid rgb(60,140,160) !important;
+  background-color: rgb(220,185,210) !important;
+  border-right:1px solid rgb(170,160,160) !important;
 }
 .paneSelector > radio[selected="true"] {
-  background-color:rgb(180,220,255) !important;
+  background-color:rgb(255,220,255) !important;
 }
 
 /* this dude is really a radiogroup... */
 #viewGroup {
-  background-color: rgb(110,165,210);
-  border-bottom: 1px solid rgb(60,140,160) !important;
+  background-color: rgb(220,185,210);
+  border-bottom: 1px solid rgb(170,160,160) !important;
 }
 /* make the radio button look like a tab */
 #viewGroup > radio {
-  background-color:rgb(90,155,190) !important;
-  border:1px solid rgb(60,140,160); !important;
+  background-color:rgb(200,175,190) !important;
+  border:1px solid rgb(170,160,160); !important;
   -moz-border-radius-topleft:3px;
   -moz-border-radius-topright:3px;
 }
 #viewGroup > radio[selected="true"] {
-  background-color:rgb(180,220,255) !important;
-  border:1px solid rgb(60,140,160) !important;
-  border-bottom:1px solid rgb(90,155,190) !important;
+  background-color:rgb(255,220,255) !important;
+  border:1px solid rgb(170,160,160) !important;
+  border-bottom:1px solid rgb(200,175,190) !important;
 }
 
 #paneAddons {
   /* adding a background color to fake making the add-on window look like a normal pref pane */
-  background-color:rgb(110,165,210);
+  background-color:rgb(220,185,210);
 }
 
 
@@ -1023,7 +1023,7 @@ html|*.error-text,
 #nav-bar toolbarbutton {
   border:1px solid white;
   -moz-border-radius:4px;
-  border-color: rgb(250,190,240) rgb(255,210,250)  rgb(180,220,255); 
+  border-color: rgb(250,190,240) rgb(255,210,250)  rgb(255,220,255); 
 }
 
 
@@ -1052,7 +1052,7 @@ searchbar[focused="true"] .searchbar-textbox {
 .locationbar-textbox, .searchbar-textbox, #searchbar .search-go-button {
   border:0px solid; 
   border:1px solid white; 
-  border-color:  rgb(180,220,255) ; 
+  border-color:  rgb(255,220,255) ; 
 }
 
 
@@ -1069,15 +1069,15 @@ menupopup, menu, menuitem {
   Appears when dragging media items - it's a combination of an image and a badge with a count
 ******************************************************************************/
 .faceplate-text {
-  color: rgb(0,0,30);
+  color: rgb(20,0,30);
 }
 #sb-player-artist-label-label,
 #sb-player-album-label-label {
-  color: rgb(70,100,190);
+  color: rgb(170,100,190);
 }
 #sb-player-timeelapsed-label > label,
 #sb-player-totaltime-label > label {
-  color: rgb(70,100,190);
+  color: rgb(170,100,190);
 }
 
 

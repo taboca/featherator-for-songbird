@@ -13,6 +13,11 @@ Make sure you have Apache Batik and a JAVA SDK installed in your box. The ./lib 
 * export JAVA_HOME=/usr/local/jdk...
 * /usr/local/apache ant bin
 
+
+== Compiling the theme ==
+
+Each theme specific detail is now kept in the src / overlay-branches directory. If you want to pick a specific theme you need to copy ( recursivelly ) the  contents of the ./src/overlay-branches/EXTENSION_THEME_NAME/* to this . main directory. Then you can simply run the 00, 10, 20 scripts and expect your app in the output-build directory. 
+
 == References ==
 
 
