@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../base.css" type="text/css" ?>
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="300"
+   height="26"
+   viewBox="0 0 300 26"
+   version="1.1"
+   >
+
+<defs>
+   <linearGradient id="shade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%" class="stop-color-odd-normal-more-more"  />
+     <stop offset="100%" class="stop-color-odd-normal"  />
+   </linearGradient>
+
+   <linearGradient id="shade2" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"   class="stop-color-odd-normal"  />
+     <stop offset="100%" class="stop-color-odd-normal-more-more"  />
+   </linearGradient>
+
+   <linearGradient id="whiteblack" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"   style="stop-color:white;stop-opacity:.9" />
+     <stop offset="50%"  style="stop-color:white;stop-opacity:.6" />
+     <stop offset="55%"  style="stop-color:white;stop-opacity:.2" />
+     <stop offset="100%" style="stop-color:black;stop-opacity:.0" />
+   </linearGradient>
+
+   <mask id="classtop">
+      <rect x="0" y="0" width="300" height="26" style="fill:url(#whiteblack)"  />
+   </mask>
+
+   <linearGradient id="whiteglassshade" x1="0%" y1="0%" x2="0%" y2="100%">
+     <stop offset="0%"    style="stop-color:white;opacity:1"  />
+     <stop offset="100%"  style="stop-color:white;opacity:1"  />
+   </linearGradient>
+
+</defs>
+
+<rect x="0" y="3" width="300" height="26"  style="fill:url(#shade2)"  />
+<rect x="0" y="3" width="300" height="22"  style="stroke-width:4px;stroke:url(#shade);fill:none"  />
+<rect x="0" y="0" width="300" height="22"  style="fill:url(#whiteglassshade)" mask="url(#classtop)"  />
+
+</svg>

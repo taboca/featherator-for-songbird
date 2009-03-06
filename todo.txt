@@ -1,8 +1,7 @@
 Release Notes: 
 ---
 
-* 0.4 release
-
+ 
 NOTEs
 ---
 

@@ -11,8 +11,8 @@
  
 <defs>
    <linearGradient id="popupshade" x1="0%" y1="0%" x2="0%" y2="100%">
-     <stop offset="0%" class="toolbarbutton-to-color"  />
-     <stop offset="100%" class="toolbarbutton-from-color"  />
+     <stop offset="0%" class="stop-even-normal"  />
+     <stop offset="100%" class="stop-even-normal-more-more"  />
    </linearGradient>
 </defs>
 
