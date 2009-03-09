@@ -16,22 +16,22 @@ cp ./temp/temp.css ./output-build-chrome/chrome/skin/images.css
 
 echo " Color values "
 
-sed -e "s/_odd_zero/rgb(210,120,230)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_odd_zero/rgb(110,120,230)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_odd_minusone/rgb(200,115,220)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_odd_minusone/rgb(100,115,220)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_odd_minustwo/rgb(190,110,210)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_odd_minustwo/rgb(90,110,210)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_odd_minusthree/rgb(180,105,200)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_odd_minusthree/rgb(80,105,200)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_odd_minusfour/rgb(170,100,190)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_odd_minusfour/rgb(70,100,190)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_odd_dark/rgb(20,0,30)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_odd_dark/rgb(0,0,30)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
 echo "Old approach "
@@ -93,42 +93,42 @@ cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
 echo "Even mapping... "
 
-sed -e "s/_even_light/rgb(255,220,255)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_light/rgb(180,220,255)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_plus/rgb(255,200,250)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_plus/rgb(160,200,250)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_normal/rgb(250,190,240)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_normal/rgb(140,180,240)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minusone/rgb(240,195,230)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minusone/rgb(130,175,230)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minustwo/rgb(230,190,220)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minustwo/rgb(120,170,220)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minusthree/rgb(220,185,210)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minusthree/rgb(110,165,210)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minusfour/rgb(210,180,200)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minusfour/rgb(100,160,200)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minusfive/rgb(200,175,190)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minusfive/rgb(90,155,190)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minussix/rgb(190,170,180)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minussix/rgb(80,150,180)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minusseven/rgb(180,165,170)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minusseven/rgb(70,145,170)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minuseight/rgb(170,160,160)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minuseight/rgb(60,140,160)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minusnine/rgb(160,155,150)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minusnine/rgb(50,145,150)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 
-sed -e "s/_even_minusten/rgb(150,150,140)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
+sed -e "s/_even_minusten/rgb(40,140,140)/g" ./output-build-chrome/chrome/skin/feathers.css > ./temp/temp.css
 cp ./temp/temp.css ./output-build-chrome/chrome/skin/feathers.css
 

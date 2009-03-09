@@ -2,12 +2,12 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#"
      xmlns:songbird="http://www.songbirdnest.com/2007/addon-metadata-rdf#">
   <Description about="urn:mozilla:install-manifest">
-    <em:id>theme@featherator.taboca.com</em:id>
+    <em:id>bluefeathers@featherator.taboca.com</em:id>
     <em:type>2</em:type>
-    <em:name>PinkFeathers</em:name>
+    <em:name>BlueFeathers</em:name>
     <em:version>0.0.0.6</em:version>
     <em:creator>Marcio Galli</em:creator>
-    <em:description>Pink Feathers for Songbird</em:description>
+    <em:description>Blue Feathers for Songbird</em:description>
     <em:targetApplication>
       <Description>
         <em:id>songbird@songbirdnest.com</em:id>
@@ -20,8 +20,8 @@
          See http://wiki.songbirdnest.com/Developer/Developer_Intro/Feathers -->
     <songbird:skin>
       <Description>
-        <songbird:name>PinkBird</songbird:name>
-        <songbird:internalName>pinkbird</songbird:internalName>
+        <songbird:name>BlueBird</songbird:name>
+        <songbird:internalName>bluebird</songbird:internalName>
         <songbird:compatibleLayout>
           <Description>
             <songbird:layoutURL>chrome://gonzo/content/xul/mainplayer.xul</songbird:layoutURL>
