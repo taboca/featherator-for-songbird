@@ -8,6 +8,9 @@
     <em:version>0.0.0.6</em:version>
     <em:creator>Marcio Galli</em:creator>
     <em:description>Blue Feathers for Songbird</em:description>
+
+    <em:optionsURL>chrome://bluebird/content/options.xul</em:optionsURL>^M
+
     <em:targetApplication>
       <Description>
         <em:id>songbird@songbirdnest.com</em:id>
@@ -38,6 +41,8 @@
         </songbird:compatibleLayout>
       </Description>
     </songbird:skin>
+
+
 
   </Description>
 </RDF>

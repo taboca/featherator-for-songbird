@@ -1,13 +1,13 @@
-content pinkbird  chrome/content/
-locale  pinkbird  en-US  chrome/locale/en-US/
-skin    pinkbird  classic/1.0 chrome/skin/
+content bluebird  chrome/content/
+locale  bluebird  en-US  chrome/locale/en-US/
+skin    bluebird  classic/1.0 chrome/skin/
 
 
 # Create a skin for Songbird
-skin  songbird pinkbird chrome/skin/
+skin  songbird bluebird chrome/skin/
 # Include the Songbird global in order to suppress the
 # standard OS look and feel.
-skin  global pinkbird  chrome://songbird-global/skin/
-skin  mozapps  pinkbird  chrome://songbird-mozapps/skin/
+skin  global bluebird  chrome://songbird-global/skin/
+skin  mozapps  bluebird  chrome://songbird-mozapps/skin/
 # Include platform specific skin rules
-skin  songbird-os-specific  pinkbird  chrome/skin/os-specific/
+skin  songbird-os-specific  bluebird  chrome/skin/os-specific/
