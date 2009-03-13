@@ -2,7 +2,6 @@ content bluebird  chrome/content/
 locale  bluebird  en-US  chrome/locale/en-US/
 skin    bluebird  classic/1.0 chrome/skin/
 
-
 # Create a skin for Songbird
 skin  songbird bluebird chrome/skin/
 # Include the Songbird global in order to suppress the
@@ -11,3 +10,9 @@ skin  global bluebird  chrome://songbird-global/skin/
 skin  mozapps  bluebird  chrome://songbird-mozapps/skin/
 # Include platform specific skin rules
 skin  songbird-os-specific  bluebird  chrome/skin/os-specific/
+
+
+# extension aspect
+
+overlay chrome://songbird/content/xul/layoutBaseOverlay.xul chrome://bluebird/content/browserOverlay.xul
+

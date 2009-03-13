@@ -9,7 +9,7 @@
     <em:creator>Marcio Galli</em:creator>
     <em:description>Blue Feathers for Songbird</em:description>
 
-    <em:optionsURL>chrome://bluebird/content/options.xul</em:optionsURL>^M
+    <em:optionsURL>chrome://bluebird/content/options.xul</em:optionsURL>
 
     <em:targetApplication>
       <Description>

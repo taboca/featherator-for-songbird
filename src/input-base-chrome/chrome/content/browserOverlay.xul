@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://bluebird/content/bluebird.css" type="text/css"?> 
+
+<!DOCTYPE overlay SYSTEM "chrome://bluebird/locale/bluebird.dtd">
+
+<overlay id="bluebird-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<script type="application/x-javascript" src="chrome://bluebird/content/browserOverlay.js" />
+
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="bluebird-bundle" src="chrome://bluebird/locale/bluebird.properties"/>
+	</stringbundleset>
+	
+	
+	
+</overlay>
